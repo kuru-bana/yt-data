@@ -1,13 +1,12 @@
 {
   "endpoint": "channels/:id",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA",
-  "checked_at": "2026-04-05T16:38:17.075Z",
+  "checked_at": "2026-04-05T16:50:16.785Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 6,
-  "failed_count": 98,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
-    "https://iv.melmac.space",
     "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -17,11 +16,17 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
+    },
+    {
+      "instance": "https://iv.melmac.space",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -182,7 +187,8 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -204,8 +210,7 @@
     },
     {
       "instance": "https://invidious.snopyta.org",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.kavin.rocks",
@@ -396,7 +401,7 @@
     {
       "instance": "https://invidious.darkness.services",
       "status": null,
-      "error": "fetch failed"
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
