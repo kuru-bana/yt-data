@@ -1,13 +1,12 @@
 {
   "endpoint": "channels/:id/streams",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/streams",
-  "checked_at": "2026-04-05T17:27:03.578Z",
+  "checked_at": "2026-04-05T17:39:02.877Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 7,
-  "failed_count": 97,
+  "working_count": 6,
+  "failed_count": 98,
   "working_instances": [
-    "https://iv.melmac.space",
     "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -18,11 +17,17 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
+    },
+    {
+      "instance": "https://iv.melmac.space",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -53,8 +58,7 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
@@ -397,7 +401,7 @@
     {
       "instance": "https://invidious.darkness.services",
       "status": null,
-      "error": "fetch failed"
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
