@@ -1,30 +1,35 @@
 {
   "endpoint": "search/suggestions",
   "sample_path": "/api/v1/search/suggestions?q=test",
-  "checked_at": "2026-04-05T18:49:46.080Z",
+  "checked_at": "2026-04-05T19:01:45.481Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 9,
-  "failed_count": 95,
+  "working_count": 8,
+  "failed_count": 96,
   "working_instances": [
-    "https://iv.melmac.space",
-    "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
+    "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
+    },
+    {
+      "instance": "https://iv.melmac.space",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -55,11 +60,17 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -68,7 +79,8 @@
     },
     {
       "instance": "https://inv.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv1.nadeko.net",
@@ -185,8 +197,7 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -428,11 +439,6 @@
     {
       "instance": "https://rust.oskamp.nl",
       "status": 404
-    },
-    {
-      "instance": "https://yt.thechangebook.org",
-      "status": null,
-      "error": "timeout"
     },
     {
       "instance": "https://app.materialio.us",
