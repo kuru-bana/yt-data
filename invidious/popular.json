@@ -1,13 +1,12 @@
 {
   "endpoint": "popular",
   "sample_path": "/api/v1/popular",
-  "checked_at": "2026-04-06T15:54:25.944Z",
+  "checked_at": "2026-04-06T16:06:25.340Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 18,
-  "failed_count": 86,
+  "working_count": 17,
+  "failed_count": 87,
   "working_instances": [
-    "https://iv.melmac.space",
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -29,11 +28,17 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
+    },
+    {
+      "instance": "https://iv.melmac.space",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -64,7 +69,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -216,8 +222,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
