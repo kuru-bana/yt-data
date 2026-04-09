@@ -1,13 +1,13 @@
 {
   "endpoint": "trending/music",
   "sample_path": "/api/v1/trending?type=music",
-  "checked_at": "2026-04-09T20:35:22.432Z",
+  "checked_at": "2026-04-09T20:50:22.024Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 7,
   "failed_count": 97,
   "working_instances": [
-    "https://iv.catgirl.cloud",
+    "https://iv.melmac.space",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.darkness.services",
@@ -18,17 +18,11 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
-    },
-    {
-      "instance": "https://iv.melmac.space",
-      "status": null,
-      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -59,12 +53,16 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -118,7 +116,8 @@
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.vern.cc",
@@ -460,8 +459,8 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
-    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
