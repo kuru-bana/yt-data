@@ -1,13 +1,12 @@
 {
   "endpoint": "trending/movies",
   "sample_path": "/api/v1/trending?type=movies",
-  "checked_at": "2026-04-11T05:36:08.303Z",
+  "checked_at": "2026-04-11T05:51:09.400Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 8,
-  "failed_count": 96,
+  "working_count": 7,
+  "failed_count": 97,
   "working_instances": [
-    "https://iv.melmac.space",
     "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -19,11 +18,17 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
+    },
+    {
+      "instance": "https://iv.melmac.space",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -251,7 +256,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -446,7 +451,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
