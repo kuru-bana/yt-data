@@ -1,13 +1,12 @@
 {
   "endpoint": "search",
   "sample_path": "/api/v1/search?q=test",
-  "checked_at": "2026-04-11T16:16:30.206Z",
+  "checked_at": "2026-04-11T16:31:30.105Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 9,
   "failed_count": 95,
   "working_instances": [
-    "https://iv.melmac.space",
     "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -15,6 +14,7 @@
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
+    "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
@@ -25,6 +25,11 @@
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
+    },
+    {
+      "instance": "https://iv.melmac.space",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ggtyler.dev",
@@ -80,8 +85,7 @@
     },
     {
       "instance": "https://inv3.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv4.nadeko.net",
@@ -253,7 +257,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -430,10 +434,6 @@
       "status": 404
     },
     {
-      "instance": "https://yt.thechangebook.org",
-      "status": 400
-    },
-    {
       "instance": "https://app.materialio.us",
       "status": 404
     },
@@ -449,6 +449,7 @@
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
+    "https://inv3.nadeko.net",
     "https://inv4.nadeko.net",
     "https://inv5.nadeko.net",
     "https://inv6.nadeko.net",
