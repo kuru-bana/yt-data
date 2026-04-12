@@ -1,7 +1,7 @@
 {
   "endpoint": "trending/gaming",
   "sample_path": "/api/v1/trending?type=gaming",
-  "checked_at": "2026-04-12T04:50:37.503Z",
+  "checked_at": "2026-04-12T05:05:38.404Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 6,
@@ -17,7 +17,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -106,23 +107,19 @@
     },
     {
       "instance": "https://inv6.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv7.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv8.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv.vern.cc",
@@ -270,8 +267,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -466,8 +462,11 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
+    "https://inv6.nadeko.net",
+    "https://inv7.nadeko.net",
+    "https://inv8.nadeko.net",
+    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
