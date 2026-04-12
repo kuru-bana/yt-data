@@ -1,13 +1,12 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-04-12T18:22:10.703Z",
+  "checked_at": "2026-04-12T18:37:11.404Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 24,
-  "failed_count": 80,
+  "working_count": 23,
+  "failed_count": 81,
   "working_instances": [
-    "https://yewtu.be",
     "https://iv.melmac.space",
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
@@ -33,6 +32,10 @@
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
+    {
+      "instance": "https://yewtu.be",
+      "status": 502
+    },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
@@ -124,7 +127,8 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
