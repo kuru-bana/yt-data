@@ -1,13 +1,12 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-04-14T19:51:33.792Z",
+  "checked_at": "2026-04-14T20:06:31.590Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 25,
-  "failed_count": 79,
+  "working_count": 23,
+  "failed_count": 81,
   "working_instances": [
-    "https://yewtu.be",
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -24,7 +23,6 @@
     "https://invidious.tiekoetter.com",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
-    "https://invidious.nerdvpn.de",
     "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
@@ -34,6 +32,10 @@
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
+    {
+      "instance": "https://yewtu.be",
+      "status": 502
+    },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
@@ -72,7 +74,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -216,8 +219,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -350,6 +352,11 @@
     },
     {
       "instance": "https://invidious.0011.lt",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.nerdvpn.de",
       "status": null,
       "error": "fetch failed"
     },
