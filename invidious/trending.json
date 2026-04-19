@@ -1,7 +1,7 @@
 {
   "endpoint": "trending",
   "sample_path": "/api/v1/trending",
-  "checked_at": "2026-04-19T07:49:45.277Z",
+  "checked_at": "2026-04-19T08:04:42.878Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 9,
@@ -20,8 +20,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -251,7 +250,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -441,6 +441,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
