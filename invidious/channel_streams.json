@@ -1,13 +1,12 @@
 {
   "endpoint": "channels/:id/streams",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/streams",
-  "checked_at": "2026-04-20T07:02:51.279Z",
+  "checked_at": "2026-04-20T07:17:50.384Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 9,
-  "failed_count": 95,
+  "working_count": 8,
+  "failed_count": 96,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://inv.vern.cc",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -20,7 +19,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -65,6 +65,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -194,7 +199,8 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.private.coffee",
@@ -440,7 +446,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -454,7 +459,6 @@
     "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
-    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.domain.glass",
