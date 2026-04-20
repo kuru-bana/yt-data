@@ -1,13 +1,12 @@
 {
   "endpoint": "resolveurl",
   "sample_path": "/api/v1/resolveurl?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ",
-  "checked_at": "2026-04-20T03:21:06.981Z",
+  "checked_at": "2026-04-20T03:36:19.289Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 22,
-  "failed_count": 82,
+  "working_count": 21,
+  "failed_count": 83,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
@@ -33,8 +32,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -79,6 +77,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -220,8 +223,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -403,6 +405,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.tiekoetter.com",
