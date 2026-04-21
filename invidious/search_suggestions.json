@@ -1,12 +1,13 @@
 {
   "endpoint": "search/suggestions",
   "sample_path": "/api/v1/search/suggestions?q=test",
-  "checked_at": "2026-04-21T15:46:32.700Z",
+  "checked_at": "2026-04-21T16:01:33.503Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 10,
-  "failed_count": 94,
+  "working_count": 11,
+  "failed_count": 93,
   "working_instances": [
+    "https://iv.catgirl.cloud",
     "https://inv.vern.cc",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -21,11 +22,13 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -66,11 +69,6 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
-    },
-    {
-      "instance": "https://iv.catgirl.cloud",
-      "status": null,
-      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -256,7 +254,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -439,7 +437,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
