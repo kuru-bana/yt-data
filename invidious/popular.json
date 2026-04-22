@@ -1,13 +1,12 @@
 {
   "endpoint": "popular",
   "sample_path": "/api/v1/popular",
-  "checked_at": "2026-04-22T06:35:30.798Z",
+  "checked_at": "2026-04-22T06:50:44.095Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 17,
-  "failed_count": 87,
+  "working_count": 16,
+  "failed_count": 88,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
@@ -28,8 +27,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -76,6 +74,11 @@
       "status": 404
     },
     {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://iv.nowhere.moe",
       "status": null,
       "error": "fetch failed"
@@ -109,7 +112,8 @@
     },
     {
       "instance": "https://inv.pistasjis.net",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.riverside.rocks",
@@ -329,7 +333,8 @@
     },
     {
       "instance": "https://invidious.nikkosphere.com",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.lunivers.trade",
@@ -418,6 +423,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.vern.cc",
     "https://inv.riverside.rocks",
