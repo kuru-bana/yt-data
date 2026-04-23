@@ -1,19 +1,19 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-04-23T06:04:12.974Z",
+  "checked_at": "2026-04-23T06:19:04.782Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
+  "working_count": 2,
+  "failed_count": 102,
   "working_instances": [
-    "https://invidious.f5.si"
+    "https://invidious.f5.si",
+    "https://invidious.ritoge.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -61,7 +61,8 @@
     },
     {
       "instance": "https://iv.catgirl.cloud",
-      "status": 500
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -251,8 +252,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -362,8 +362,7 @@
     },
     {
       "instance": "https://invidious.nikkosphere.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.lunivers.trade",
@@ -409,10 +408,6 @@
       "instance": "https://invidious.schenkel.eti.br",
       "status": null,
       "error": "fetch failed"
-    },
-    {
-      "instance": "https://invidious.ritoge.com",
-      "status": 500
     },
     {
       "instance": "https://yt.omada.cafe",
@@ -467,6 +462,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
