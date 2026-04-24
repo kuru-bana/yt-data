@@ -1,13 +1,12 @@
 {
   "endpoint": "trending/news",
   "sample_path": "/api/v1/trending?type=news",
-  "checked_at": "2026-04-24T12:04:27.153Z",
+  "checked_at": "2026-04-24T12:20:09.297Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 8,
-  "failed_count": 96,
+  "working_count": 7,
+  "failed_count": 97,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.darkness.services",
@@ -19,7 +18,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -64,6 +64,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -255,7 +260,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -365,7 +371,8 @@
     },
     {
       "instance": "https://invidious.nikkosphere.com",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.lunivers.trade",
@@ -446,7 +453,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
