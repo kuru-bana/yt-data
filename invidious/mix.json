@@ -1,13 +1,12 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-04-24T03:33:48.360Z",
+  "checked_at": "2026-04-24T03:49:02.284Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 5,
-  "failed_count": 99,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
-    "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
@@ -64,7 +63,8 @@
     },
     {
       "instance": "https://iv.catgirl.cloud",
-      "status": 500
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -163,13 +163,11 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -258,7 +256,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -365,6 +364,10 @@
       "instance": "https://invidious.mutahar.rocks",
       "status": null,
       "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.f5.si",
+      "status": 500
     },
     {
       "instance": "https://invidious.nikkosphere.com",
@@ -478,6 +481,7 @@
     "https://invidious.kavin.rocks",
     "https://invidious.domain.glass",
     "https://invidious.epicsite.xyz",
+    "https://invidious.f5.si",
     "https://lekker.gay"
   ]
 }
