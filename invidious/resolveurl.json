@@ -1,7 +1,7 @@
 {
   "endpoint": "resolveurl",
   "sample_path": "/api/v1/resolveurl?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ",
-  "checked_at": "2026-05-01T22:21:24.515Z",
+  "checked_at": "2026-05-01T22:36:12.111Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 19,
@@ -30,7 +30,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -222,8 +223,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -396,8 +396,7 @@
     },
     {
       "instance": "https://lekker.gay",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://rust.oskamp.nl",
@@ -419,7 +418,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.tiekoetter.com",
@@ -427,6 +425,7 @@
     "https://invidious.kavin.rocks",
     "https://invidious.io.lol",
     "https://invidious.domain.glass",
-    "https://invidious.epicsite.xyz"
+    "https://invidious.epicsite.xyz",
+    "https://lekker.gay"
   ]
 }
