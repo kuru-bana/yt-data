@@ -1,7 +1,7 @@
 {
   "endpoint": "search/suggestions",
   "sample_path": "/api/v1/search/suggestions?q=test",
-  "checked_at": "2026-05-02T00:31:34.524Z",
+  "checked_at": "2026-05-02T00:46:34.818Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 8,
@@ -19,11 +19,13 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -59,7 +61,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -68,7 +71,7 @@
     {
       "instance": "https://iv.catgirl.cloud",
       "status": null,
-      "error": "timeout"
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -450,7 +453,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
