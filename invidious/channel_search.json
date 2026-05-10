@@ -1,7 +1,7 @@
 {
   "endpoint": "channels/:id/search",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/search?q=test",
-  "checked_at": "2026-05-10T15:16:50.264Z",
+  "checked_at": "2026-05-10T15:32:28.744Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 8,
@@ -141,7 +141,7 @@
     },
     {
       "instance": "https://inv.pistasjis.net",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://inv.riverside.rocks",
@@ -162,11 +162,13 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -291,13 +293,11 @@
     },
     {
       "instance": "https://invidious.domain.glass",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.epicsite.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.ethibox.fr",
@@ -310,8 +310,7 @@
     },
     {
       "instance": "https://invidious.froth.zone",
-      "status": null,
-      "error": "fetch failed"
+      "status": 410
     },
     {
       "instance": "https://invidious.pesso.al",
@@ -469,6 +468,8 @@
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.io.lol",
+    "https://invidious.domain.glass",
+    "https://invidious.epicsite.xyz",
     "https://lekker.gay"
   ]
 }
