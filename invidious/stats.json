@@ -1,13 +1,12 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-05-14T10:21:27.917Z",
+  "checked_at": "2026-05-14T10:36:42.612Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 22,
-  "failed_count": 82,
+  "working_count": 21,
+  "failed_count": 83,
   "working_instances": [
-    "https://yewtu.be",
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -31,6 +30,10 @@
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
+    {
+      "instance": "https://yewtu.be",
+      "status": 502
+    },
     {
       "instance": "https://vid.puffyan.us",
       "status": 502
@@ -119,7 +122,8 @@
     },
     {
       "instance": "https://inv.in.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.us.projectsegfau.lt",
@@ -293,8 +297,7 @@
     },
     {
       "instance": "https://invidious.osi.kr",
-      "status": null,
-      "error": "fetch failed"
+      "status": 436
     },
     {
       "instance": "https://invidious.rhyshl.live",
