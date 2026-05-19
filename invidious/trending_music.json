@@ -1,13 +1,12 @@
 {
   "endpoint": "trending/music",
   "sample_path": "/api/v1/trending?type=music",
-  "checked_at": "2026-05-19T22:04:55.307Z",
+  "checked_at": "2026-05-19T22:19:51.028Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 8,
-  "failed_count": 96,
+  "working_count": 7,
+  "failed_count": 97,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.darkness.services",
@@ -19,8 +18,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -65,6 +63,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -333,8 +336,7 @@
     },
     {
       "instance": "https://invidious.osi.kr",
-      "status": null,
-      "error": "fetch failed"
+      "status": 436
     },
     {
       "instance": "https://invidious.rhyshl.live",
@@ -448,6 +450,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
