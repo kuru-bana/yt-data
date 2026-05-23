@@ -1,7 +1,7 @@
 {
   "endpoint": "trending/movies",
   "sample_path": "/api/v1/trending?type=movies",
-  "checked_at": "2026-05-23T08:35:35.613Z",
+  "checked_at": "2026-05-23T08:50:28.409Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 5,
@@ -16,8 +16,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -188,7 +187,8 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -457,6 +457,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
