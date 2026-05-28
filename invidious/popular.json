@@ -1,13 +1,12 @@
 {
   "endpoint": "popular",
   "sample_path": "/api/v1/popular",
-  "checked_at": "2026-05-28T11:35:51.117Z",
+  "checked_at": "2026-05-28T11:51:10.227Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 15,
-  "failed_count": 89,
+  "working_count": 13,
+  "failed_count": 91,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
@@ -16,11 +15,10 @@
     "https://inv5.nadeko.net",
     "https://inv6.nadeko.net",
     "https://inv7.nadeko.net",
-    "https://inv8.nadeko.net",
-    "https://inv9.nadeko.net",
     "https://inv.zzls.xyz",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
+    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org"
   ],
   "failed_instances": [
@@ -73,7 +71,22 @@
       "status": 404
     },
     {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://iv.nowhere.moe",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://inv8.nadeko.net",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://inv9.nadeko.net",
       "status": null,
       "error": "fetch failed"
     },
@@ -218,8 +231,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -371,7 +383,8 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 429
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
@@ -396,11 +409,6 @@
     },
     {
       "instance": "https://yt.artemislena.eu",
-      "status": null,
-      "error": "fetch failed"
-    },
-    {
-      "instance": "https://invidious.flokinet.to",
       "status": null,
       "error": "fetch failed"
     },
