@@ -1,7 +1,7 @@
 {
   "endpoint": "channels/:id/comments",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/comments",
-  "checked_at": "2026-05-28T19:18:22.411Z",
+  "checked_at": "2026-05-28T19:33:20.716Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 8,
@@ -19,8 +19,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -256,7 +255,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -447,6 +447,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
