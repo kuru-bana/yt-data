@@ -1,17 +1,19 @@
 {
   "endpoint": "videos/:id",
   "sample_path": "/api/v1/videos/dQw4w9WgXcQ",
-  "checked_at": "2026-05-29T02:00:12.131Z",
+  "checked_at": "2026-05-29T02:15:10.570Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 0,
-  "failed_count": 104,
-  "working_instances": [],
+  "working_count": 2,
+  "failed_count": 102,
+  "working_instances": [
+    "https://invidious.ritoge.com",
+    "https://yt.omada.cafe"
+  ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -24,13 +26,11 @@
     },
     {
       "instance": "https://iv.ggtyler.dev",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://nyc1.iv.ggtyler.dev",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://cal1.iv.ggtyler.dev",
@@ -208,8 +208,7 @@
     },
     {
       "instance": "https://invidious.snopyta.org",
-      "status": null,
-      "error": "timeout"
+      "status": 200
     },
     {
       "instance": "https://invidious.kavin.rocks",
@@ -239,8 +238,7 @@
     },
     {
       "instance": "https://invidious.privacyredirect.com",
-      "status": null,
-      "error": "timeout"
+      "status": 404
     },
     {
       "instance": "https://invidious.poast.org",
@@ -276,8 +274,7 @@
     },
     {
       "instance": "https://invidious.qwik.space",
-      "status": null,
-      "error": "timeout"
+      "status": 200
     },
     {
       "instance": "https://invidious.citizen4.eu",
@@ -331,7 +328,8 @@
     },
     {
       "instance": "https://invidious.osi.kr",
-      "status": 436
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.rhyshl.live",
@@ -410,22 +408,11 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": null,
-      "error": "fetch failed"
+      "status": 500
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
-    },
-    {
-      "instance": "https://invidious.ritoge.com",
-      "status": null,
-      "error": "fetch failed"
-    },
-    {
-      "instance": "https://yt.omada.cafe",
-      "status": null,
-      "error": "fetch failed"
     },
     {
       "instance": "https://y.com.sb",
@@ -434,13 +421,11 @@
     },
     {
       "instance": "https://yt.vern.cc",
-      "status": null,
-      "error": "fetch failed"
+      "status": 500
     },
     {
       "instance": "https://invidious.protokolla.fi",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://yt.artemislena.eu",
@@ -449,33 +434,27 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "fetch failed"
+      "status": 500
     },
     {
       "instance": "https://lekker.gay",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://rust.oskamp.nl",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://yt.thechangebook.org",
-      "status": null,
-      "error": "fetch failed"
+      "status": 500
     },
     {
       "instance": "https://app.materialio.us",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://inv.kamuridesu.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 500
     },
     {
       "instance": "https://invidious.projektegfau.lt",
@@ -484,6 +463,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -503,6 +483,8 @@
     "https://invidious.domain.glass",
     "https://invidious.epicsite.xyz",
     "https://invidious.f5.si",
-    "https://invidious.schenkel.eti.br"
+    "https://invidious.schenkel.eti.br",
+    "https://lekker.gay",
+    "https://inv.kamuridesu.com"
   ]
 }
