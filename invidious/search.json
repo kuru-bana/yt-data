@@ -1,7 +1,7 @@
 {
   "endpoint": "search",
   "sample_path": "/api/v1/search?q=test",
-  "checked_at": "2026-05-29T09:46:20.315Z",
+  "checked_at": "2026-05-29T10:01:18.410Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 7,
@@ -9,10 +9,10 @@
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://invidious.flokinet.to",
+    "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
@@ -107,7 +107,8 @@
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.vern.cc",
@@ -161,13 +162,11 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -233,7 +232,8 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -406,6 +406,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -436,10 +440,6 @@
       "status": 404
     },
     {
-      "instance": "https://yt.thechangebook.org",
-      "status": 400
-    },
-    {
       "instance": "https://app.materialio.us",
       "status": 404
     },
@@ -461,7 +461,6 @@
     "https://inv6.nadeko.net",
     "https://inv7.nadeko.net",
     "https://inv8.nadeko.net",
-    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
