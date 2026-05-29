@@ -8,11 +8,19 @@
 ### https://www.acethinker.tw/downloader
 ### https://www.acethinker.ai/downloader
 ### https://www.acethinker.com.br/audio/ ←new!
-- /api/dlapinewv2.php?url={YOUTUBE_URL}
-- /api/newytdlapi/youtube_mp3_audio_video_downloader.php?url={YOUTUBE_URL} <br>
-**{YOUTUBE_URL}にはhttps://www.youtube.com/watch?v={video_id} のものを入力すること**
+---
+## {YOUTUBE_URL}にはhttps://www.youtube.com/watch?v={video_id} のものを入力すること
+### MP4取得
 ```
-fetch("https://grab.aquapp.net/api/dlapinewv2.php?url=https://www.youtube.com/watch?v={video_id]")
+{HOST_URL}/api/dlapinewv2.php?url={YOUTUBE_URL}
+```
+### MP3取得
+```
+{HOST_URL}/api/newytdlapi/youtube_mp3_audio_video_downloader.php?url={YOUTUBE_URL}
+```
+### 全データ(コンソール用)
+```
+fetch("{HOST_URL}/api/dlapinewv2.php?url=https://www.youtube.com/watch?v={video_id]")
 .then(r => r.json())
 .then(console.log)
 ```
