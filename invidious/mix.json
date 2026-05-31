@@ -1,13 +1,15 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-05-31T04:49:05.611Z",
+  "checked_at": "2026-05-31T05:04:05.823Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
-    "https://invidious.ducks.party"
+    "https://invidious.flokinet.to",
+    "https://yt.thechangebook.org",
+    "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
@@ -101,11 +103,13 @@
     },
     {
       "instance": "https://inv8.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.vern.cc",
@@ -150,7 +154,8 @@
     },
     {
       "instance": "https://inv.in.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://inv.us.projectsegfau.lt",
@@ -252,8 +257,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -394,6 +398,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.ducks.party",
+      "status": 500
+    },
+    {
       "instance": "https://invidious.nerdvpn.de",
       "status": null,
       "error": "fetch failed"
@@ -438,10 +446,6 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.flokinet.to",
-      "status": 500
-    },
-    {
       "instance": "https://lekker.gay",
       "status": 403
     },
@@ -450,16 +454,8 @@
       "status": 404
     },
     {
-      "instance": "https://yt.thechangebook.org",
-      "status": 500
-    },
-    {
       "instance": "https://app.materialio.us",
       "status": 404
-    },
-    {
-      "instance": "https://inv.kamuridesu.com",
-      "status": 500
     },
     {
       "instance": "https://invidious.projektegfau.lt",
@@ -478,8 +474,6 @@
     "https://inv5.nadeko.net",
     "https://inv6.nadeko.net",
     "https://inv7.nadeko.net",
-    "https://inv8.nadeko.net",
-    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
@@ -489,7 +483,6 @@
     "https://invidious.epicsite.xyz",
     "https://invidious.f5.si",
     "https://invidious.schenkel.eti.br",
-    "https://lekker.gay",
-    "https://inv.kamuridesu.com"
+    "https://lekker.gay"
   ]
 }
