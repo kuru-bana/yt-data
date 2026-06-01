@@ -1,11 +1,11 @@
 {
   "endpoint": "hashtag/:tag",
   "sample_path": "/api/v1/hashtag/music",
-  "checked_at": "2026-06-01T13:36:43.332Z",
+  "checked_at": "2026-06-01T13:51:43.037Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 18,
-  "failed_count": 86,
+  "working_count": 17,
+  "failed_count": 87,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
@@ -23,14 +23,12 @@
     "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://invidious.flokinet.to",
-    "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -222,7 +220,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -408,6 +406,10 @@
       "status": 404
     },
     {
+      "instance": "https://yt.thechangebook.org",
+      "status": 400
+    },
+    {
       "instance": "https://app.materialio.us",
       "status": 404
     },
@@ -418,6 +420,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.tiekoetter.com",
