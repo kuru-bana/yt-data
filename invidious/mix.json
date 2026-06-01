@@ -1,18 +1,19 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-06-01T09:04:07.519Z",
+  "checked_at": "2026-06-01T09:19:08.821Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 1,
   "failed_count": 103,
   "working_instances": [
-    "https://invidious.ducks.party"
+    "https://invidious.ritoge.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -52,7 +53,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -393,6 +395,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.ducks.party",
+      "status": 500
+    },
+    {
       "instance": "https://invidious.nerdvpn.de",
       "status": null,
       "error": "fetch failed"
@@ -404,15 +410,11 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 500
+      "status": 429
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
-    },
-    {
-      "instance": "https://invidious.ritoge.com",
-      "status": 500
     },
     {
       "instance": "https://yt.omada.cafe",
@@ -467,7 +469,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
