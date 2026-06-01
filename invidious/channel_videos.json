@@ -1,26 +1,27 @@
 {
   "endpoint": "channels/:id/videos",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/videos",
-  "checked_at": "2026-06-01T14:02:33.837Z",
+  "checked_at": "2026-06-01T14:17:33.934Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 5,
-  "failed_count": 99,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -163,8 +164,7 @@
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -404,6 +404,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -458,7 +462,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
