@@ -1,15 +1,14 @@
 {
   "endpoint": "trending/gaming",
   "sample_path": "/api/v1/trending?type=gaming",
-  "checked_at": "2026-06-02T13:20:28.432Z",
+  "checked_at": "2026-06-02T13:35:26.436Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 6,
-  "failed_count": 98,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://inv.kamuridesu.com"
@@ -17,7 +16,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -139,7 +139,7 @@
     },
     {
       "instance": "https://inv.pistasjis.net",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://inv.riverside.rocks",
@@ -404,6 +404,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -454,7 +458,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
