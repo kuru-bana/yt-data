@@ -1,13 +1,12 @@
 {
   "endpoint": "channel/:id",
   "sample_path": "/channel/UCVhQ2NnY5Rskt6UjCUkJ_DA",
-  "checked_at": "2026-06-02T19:01:20.946Z",
+  "checked_at": "2026-06-02T19:31:24.151Z",
   "cache_ttl_seconds": 600,
   "total": 131,
-  "working_count": 2,
-  "failed_count": 129,
+  "working_count": 1,
+  "failed_count": 130,
   "working_instances": [
-    "https://pipedapi.wireway.ch",
     "https://api.piped.private.coffee"
   ],
   "failed_instances": [
@@ -152,8 +151,14 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://pipedapi.wireway.ch",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://piped.wireway.ch",
-      "status": 200
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://pipedapi.leptons.xyz",
@@ -356,7 +361,8 @@
     },
     {
       "instance": "https://yapi.vyper.me",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://api.looleh.xyz",
@@ -633,7 +639,6 @@
     "https://pipedapi.moomoo.me",
     "https://pipedapi.syncpundit.io",
     "https://piped.syncpundit.io",
-    "https://piped.wireway.ch",
     "https://pipedapi.leptons.xyz",
     "https://api-piped.mha.fi",
     "https://pipedapi.nogafam.fr"
