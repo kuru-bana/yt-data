@@ -1,24 +1,24 @@
 {
   "endpoint": "trending/news",
   "sample_path": "/api/v1/trending?type=news",
-  "checked_at": "2026-06-03T06:35:13.626Z",
+  "checked_at": "2026-06-03T06:50:33.636Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 7,
-  "failed_count": 97,
+  "working_count": 6,
+  "failed_count": 98,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://y.com.sb",
-    "https://invidious.flokinet.to",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -58,7 +58,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -427,6 +428,11 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -450,7 +456,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
