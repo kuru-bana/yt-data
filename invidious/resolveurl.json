@@ -1,12 +1,13 @@
 {
   "endpoint": "resolveurl",
   "sample_path": "/api/v1/resolveurl?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ",
-  "checked_at": "2026-06-03T03:36:12.730Z",
+  "checked_at": "2026-06-03T03:51:10.427Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 17,
   "failed_count": 87,
   "working_instances": [
+    "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
@@ -19,7 +20,6 @@
     "https://inv9.nadeko.net",
     "https://inv.zzls.xyz",
     "https://invidious.ducks.party",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://invidious.flokinet.to",
     "https://yt.thechangebook.org",
@@ -28,8 +28,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -69,17 +68,11 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
       "status": 404
-    },
-    {
-      "instance": "https://iv.catgirl.cloud",
-      "status": null,
-      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -378,6 +371,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -424,6 +421,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.tiekoetter.com",
