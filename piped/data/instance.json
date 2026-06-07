@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-06-07T06:47:49.750Z",
+  "checked_at": "2026-06-07T07:02:50.552Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.wireway.ch",
       "total_endpoints": 12,
-      "working_count": 10,
-      "failed_count": 2,
-      "availability": 83,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
       "working_endpoints": [
         "streams",
         "comments",
@@ -18,15 +18,37 @@
         "channel",
         "playlists",
         "config",
+        "sponsors",
         "c",
         "user"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
-        },
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
+      "total_endpoints": 12,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors",
+        "c",
+        "user"
+      ],
+      "failed_endpoints": [
         {
           "endpoint": "dearrow",
           "status": 400
@@ -54,38 +76,6 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": 500
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://pipedapi.wireway.ch",
-      "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "c",
-          "status": 500
-        },
-        {
-          "endpoint": "user",
           "status": 500
         },
         {
@@ -5068,19 +5058,23 @@
         },
         {
           "endpoint": "channel",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "config",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "sponsors",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
