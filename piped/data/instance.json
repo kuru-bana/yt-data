@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-08T12:32:50.843Z",
+  "checked_at": "2026-06-08T14:02:51.140Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,28 +61,25 @@
     {
       "instance": "https://pipedapi.wireway.ch",
       "total_endpoints": 12,
-      "working_count": 6,
-      "failed_count": 6,
-      "availability": 50,
+      "working_count": 7,
+      "failed_count": 5,
+      "availability": 58,
       "working_endpoints": [
         "streams",
         "comments",
-        "trending",
-        "channel",
+        "search",
+        "suggestions",
+        "playlists",
         "config",
         "sponsors"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "search",
+          "endpoint": "trending",
           "status": 500
         },
         {
-          "endpoint": "suggestions",
-          "status": 500
-        },
-        {
-          "endpoint": "playlists",
+          "endpoint": "channel",
           "status": 500
         },
         {
@@ -4890,7 +4887,7 @@
         },
         {
           "endpoint": "config",
-          "status": 525
+          "status": 522
         },
         {
           "endpoint": "sponsors",
@@ -5048,15 +5045,18 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "comments",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "search",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
