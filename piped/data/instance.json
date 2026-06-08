@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-06-08T04:32:50.350Z",
+  "checked_at": "2026-06-08T05:02:49.946Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
-      "instance": "https://pipedapi.wireway.ch",
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.wireway.ch",
       "total_endpoints": 12,
       "working_count": 10,
       "failed_count": 2,
@@ -38,20 +38,19 @@
       "working_endpoints": [
         "streams",
         "comments",
-        "search",
         "suggestions",
         "trending",
         "channel",
         "playlists",
         "config",
         "sponsors",
-        "c"
+        "c",
+        "user"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "endpoint": "search",
+          "status": 500
         },
         {
           "endpoint": "dearrow",
@@ -5042,13 +5041,11 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "suggestions",
