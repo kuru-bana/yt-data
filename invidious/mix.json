@@ -1,15 +1,12 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-06-11T13:04:26.383Z",
+  "checked_at": "2026-06-11T13:19:30.830Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 2,
-  "failed_count": 102,
-  "working_instances": [
-    "https://invidious.ritoge.com",
-    "https://inv.kamuridesu.com"
-  ],
+  "working_count": 0,
+  "failed_count": 104,
+  "working_instances": [],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
@@ -143,11 +140,13 @@
     },
     {
       "instance": "https://inv.riverside.rocks",
-      "status": 200
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://inv.zzls.xyz",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.in.projectsegfau.lt",
@@ -165,7 +164,8 @@
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -254,7 +254,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -418,6 +418,10 @@
       "status": 403
     },
     {
+      "instance": "https://invidious.ritoge.com",
+      "status": 500
+    },
+    {
       "instance": "https://yt.omada.cafe",
       "status": null,
       "error": "fetch failed"
@@ -442,8 +446,7 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "fetch failed"
+      "status": 500
     },
     {
       "instance": "https://lekker.gay",
@@ -461,6 +464,11 @@
     {
       "instance": "https://app.materialio.us",
       "status": 404
+    },
+    {
+      "instance": "https://inv.kamuridesu.com",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
@@ -481,8 +489,6 @@
     "https://inv7.nadeko.net",
     "https://inv8.nadeko.net",
     "https://inv9.nadeko.net",
-    "https://inv.riverside.rocks",
-    "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
