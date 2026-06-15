@@ -1,21 +1,23 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-06-15T23:03:50.530Z",
+  "checked_at": "2026-06-15T23:18:40.433Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 6,
+  "failed_count": 98,
   "working_instances": [
+    "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
+    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
-    "https://yt.omada.cafe"
+    "https://yt.omada.cafe",
+    "https://invidious.flokinet.to"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -55,17 +57,11 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
       "status": 404
-    },
-    {
-      "instance": "https://iv.catgirl.cloud",
-      "status": null,
-      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -74,8 +70,7 @@
     },
     {
       "instance": "https://inv.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv1.nadeko.net",
@@ -410,10 +405,6 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.darkness.services",
-      "status": 429
-    },
-    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -434,11 +425,6 @@
       "instance": "https://yt.artemislena.eu",
       "status": null,
       "error": "fetch failed"
-    },
-    {
-      "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
@@ -469,7 +455,9 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
+    "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
     "https://inv3.nadeko.net",
