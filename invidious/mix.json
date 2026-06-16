@@ -1,20 +1,19 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-06-16T17:19:22.228Z",
+  "checked_at": "2026-06-16T17:34:18.731Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 2,
   "failed_count": 102,
   "working_instances": [
-    "https://iv.catgirl.cloud",
-    "https://invidious.ducks.party"
+    "https://invidious.ducks.party",
+    "https://yt.thechangebook.org"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -54,12 +53,15 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": 500
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -413,8 +415,7 @@
     },
     {
       "instance": "https://invidious.ritoge.com",
-      "status": null,
-      "error": "timeout"
+      "status": 500
     },
     {
       "instance": "https://yt.omada.cafe",
@@ -454,10 +455,6 @@
       "status": 404
     },
     {
-      "instance": "https://yt.thechangebook.org",
-      "status": 500
-    },
-    {
       "instance": "https://app.materialio.us",
       "status": 404
     },
@@ -472,6 +469,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
