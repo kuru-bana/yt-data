@@ -1,15 +1,14 @@
 {
   "endpoint": "channels/:id/search",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/search?q=test",
-  "checked_at": "2026-06-21T02:18:16.021Z",
+  "checked_at": "2026-06-21T02:33:17.633Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ritoge.com",
-    "https://invidious.flokinet.to",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
@@ -439,6 +438,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "status": 502
+    },
+    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -449,7 +452,8 @@
     },
     {
       "instance": "https://yt.thechangebook.org",
-      "status": 400
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://app.materialio.us",
