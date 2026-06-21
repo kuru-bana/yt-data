@@ -1,7 +1,7 @@
 {
   "endpoint": "popular",
   "sample_path": "/api/v1/popular",
-  "checked_at": "2026-06-21T11:36:11.431Z",
+  "checked_at": "2026-06-21T11:51:11.729Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 5,
@@ -9,8 +9,8 @@
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
-    "https://inv.zzls.xyz",
     "https://invidious.ritoge.com",
+    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org"
   ],
   "failed_instances": [
@@ -85,7 +85,8 @@
     },
     {
       "instance": "https://inv5.nadeko.net",
-      "status": 418
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv6.nadeko.net",
@@ -141,6 +142,11 @@
       "status": 200
     },
     {
+      "instance": "https://inv.zzls.xyz",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
       "instance": "https://inv.in.projectsegfau.lt",
       "status": 200
     },
@@ -179,8 +185,7 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -189,13 +194,11 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": null,
-      "error": "fetch failed"
+      "status": 502
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -435,10 +438,6 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.flokinet.to",
-      "status": 502
-    },
-    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -466,6 +465,7 @@
     "https://iv.duti.dev",
     "https://inv.vern.cc",
     "https://inv.riverside.rocks",
+    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.domain.glass",
