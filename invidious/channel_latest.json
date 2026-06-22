@@ -1,15 +1,13 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-06-22T17:19:05.339Z",
+  "checked_at": "2026-06-22T17:34:05.331Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 1,
+  "failed_count": 103,
   "working_instances": [
-    "https://iv.catgirl.cloud",
-    "https://invidious.darkness.services",
-    "https://inv.kamuridesu.com"
+    "https://iv.catgirl.cloud"
   ],
   "failed_instances": [
     {
@@ -250,7 +248,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -406,6 +405,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -440,8 +443,7 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
+      "status": 502
     },
     {
       "instance": "https://lekker.gay",
@@ -459,6 +461,11 @@
     {
       "instance": "https://app.materialio.us",
       "status": 404
+    },
+    {
+      "instance": "https://inv.kamuridesu.com",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
