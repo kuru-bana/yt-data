@@ -1,13 +1,14 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-06-23T20:19:17.731Z",
+  "checked_at": "2026-06-23T20:34:11.721Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
+  "working_count": 2,
+  "failed_count": 102,
   "working_instances": [
-    "https://invidious.ducks.party"
+    "https://invidious.darkness.services",
+    "https://invidious.ritoge.com"
   ],
   "failed_instances": [
     {
@@ -199,11 +200,13 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -211,7 +214,8 @@
     },
     {
       "instance": "https://invidious.snopyta.org",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.kavin.rocks",
@@ -397,6 +401,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.ducks.party",
+      "status": 500
+    },
+    {
       "instance": "https://invidious.nerdvpn.de",
       "status": null,
       "error": "fetch failed"
@@ -407,16 +415,8 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.darkness.services",
-      "status": 500
-    },
-    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
-    },
-    {
-      "instance": "https://invidious.ritoge.com",
-      "status": 500
     },
     {
       "instance": "https://yt.omada.cafe",
@@ -442,8 +442,7 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
+      "status": 502
     },
     {
       "instance": "https://lekker.gay",
@@ -486,7 +485,6 @@
     "https://inv8.nadeko.net",
     "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
-    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.domain.glass",
