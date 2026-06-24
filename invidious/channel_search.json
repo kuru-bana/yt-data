@@ -1,18 +1,17 @@
 {
   "endpoint": "channels/:id/search",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/search?q=test",
-  "checked_at": "2026-06-24T06:03:22.742Z",
+  "checked_at": "2026-06-24T06:18:24.239Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 6,
-  "failed_count": 98,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
-    "https://yt.thechangebook.org",
-    "https://inv.kamuridesu.com"
+    "https://yt.thechangebook.org"
   ],
   "failed_instances": [
     {
@@ -255,7 +254,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -443,11 +443,17 @@
     },
     {
       "instance": "https://rust.oskamp.nl",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://app.materialio.us",
       "status": 404
+    },
+    {
+      "instance": "https://inv.kamuridesu.com",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
