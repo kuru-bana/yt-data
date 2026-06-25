@@ -1,15 +1,18 @@
 {
-  "checked_at": "2026-06-25T13:52:11.938Z",
+  "checked_at": "2026-06-25T14:21:40.328Z",
   "endpoints": {
     "video": {
       "endpoint": "videos/:id",
       "sample_path": "/api/v1/videos/dQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:45:12.336Z",
+      "checked_at": "2026-06-25T14:15:10.625Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 0,
-      "failed_count": 104,
-      "working_instances": [],
+      "working_count": 2,
+      "failed_count": 102,
+      "working_instances": [
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe"
+      ],
       "failed_instances": [
         {
           "instance": "https://yewtu.be",
@@ -140,7 +143,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -254,7 +257,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 401
+          "status": 200
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -415,16 +418,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -503,18 +496,19 @@
     "comments": {
       "endpoint": "comments/:id",
       "sample_path": "/api/v1/comments/dQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:45:27.738Z",
+      "checked_at": "2026-06-25T14:15:24.526Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 7,
-      "failed_count": 97,
+      "working_count": 8,
+      "failed_count": 96,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://inv.nadeko.net",
         "https://inv.zzls.xyz",
-        "https://invidious.tiekoetter.com",
         "https://invidious.f5.si",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -639,7 +633,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -656,11 +650,13 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -684,7 +680,8 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -692,8 +689,14 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.tiekoetter.com",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
           "instance": "https://invidious.private.coffee",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.perennialte.ch",
@@ -701,7 +704,8 @@
         },
         {
           "instance": "https://invidious.snopyta.org",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.kavin.rocks",
@@ -744,7 +748,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -899,16 +903,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -967,14 +961,16 @@
     "captions": {
       "endpoint": "captions/:id",
       "sample_path": "/api/v1/captions/dQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:45:43.136Z",
+      "checked_at": "2026-06-25T14:15:38.518Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 2,
-      "failed_count": 102,
+      "working_count": 4,
+      "failed_count": 100,
       "working_instances": [
         "https://inv.nadeko.net",
-        "https://inv.zzls.xyz"
+        "https://inv.zzls.xyz",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe"
       ],
       "failed_instances": [
         {
@@ -1042,8 +1038,7 @@
         },
         {
           "instance": "https://inv2.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 418
         },
         {
           "instance": "https://inv3.nadeko.net",
@@ -1103,7 +1098,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -1212,7 +1207,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -1373,16 +1368,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -1450,7 +1435,7 @@
     "annotations": {
       "endpoint": "annotations/:id",
       "sample_path": "/api/v1/annotations/dQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:45:58.732Z",
+      "checked_at": "2026-06-25T14:15:52.118Z",
       "cache_ttl_seconds": 600,
       "total": 104,
       "working_count": 0,
@@ -1530,11 +1515,13 @@
         },
         {
           "instance": "https://inv3.nadeko.net",
-          "status": 418
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv4.nadeko.net",
-          "status": 418
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv5.nadeko.net",
@@ -1586,7 +1573,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -1699,7 +1686,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -1863,13 +1850,11 @@
         },
         {
           "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
+          "status": 503
         },
         {
           "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "instance": "https://y.com.sb",
@@ -1937,12 +1922,15 @@
     "transcripts": {
       "endpoint": "transcripts/:id",
       "sample_path": "/api/v1/transcripts/dQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:46:14.327Z",
+      "checked_at": "2026-06-25T14:16:05.725Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 0,
-      "failed_count": 104,
-      "working_instances": [],
+      "working_count": 2,
+      "failed_count": 102,
+      "working_instances": [
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe"
+      ],
       "failed_instances": [
         {
           "instance": "https://yewtu.be",
@@ -2073,7 +2061,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -2094,8 +2082,7 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
@@ -2123,7 +2110,8 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -2136,7 +2124,8 @@
         },
         {
           "instance": "https://invidious.private.coffee",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.perennialte.ch",
@@ -2165,7 +2154,8 @@
         },
         {
           "instance": "https://invidious.slipfox.xyz",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.privacydev.net",
@@ -2187,7 +2177,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -2350,16 +2340,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -2379,7 +2359,7 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": 500
+          "status": 502
         },
         {
           "instance": "https://lekker.gay",
@@ -2436,14 +2416,17 @@
     "search": {
       "endpoint": "search",
       "sample_path": "/api/v1/search?q=test",
-      "checked_at": "2026-06-25T13:46:29.932Z",
+      "checked_at": "2026-06-25T14:16:21.334Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
+        "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -2548,7 +2531,8 @@
         },
         {
           "instance": "https://inv.odyssey346.dev",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.perditum.com",
@@ -2572,7 +2556,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -2593,8 +2577,7 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
@@ -2665,7 +2648,8 @@
         },
         {
           "instance": "https://invidious.slipfox.xyz",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.privacydev.net",
@@ -2687,7 +2671,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -2846,16 +2830,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -2886,10 +2860,6 @@
         {
           "instance": "https://rust.oskamp.nl",
           "status": 404
-        },
-        {
-          "instance": "https://yt.thechangebook.org",
-          "status": 400
         },
         {
           "instance": "https://app.materialio.us",
@@ -2928,14 +2898,15 @@
     "search/suggestions": {
       "endpoint": "search/suggestions",
       "sample_path": "/api/v1/search/suggestions?q=test",
-      "checked_at": "2026-06-25T13:46:45.339Z",
+      "checked_at": "2026-06-25T14:16:36.140Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 5,
-      "failed_count": 99,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
-        "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://invidious.flokinet.to",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
@@ -3018,23 +2989,19 @@
         },
         {
           "instance": "https://inv5.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv6.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv7.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv8.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv9.nadeko.net",
@@ -3071,7 +3038,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -3079,8 +3046,7 @@
         },
         {
           "instance": "https://inv.zzls.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv.in.projectsegfau.lt",
@@ -3093,12 +3059,12 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -3122,8 +3088,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -3165,7 +3130,8 @@
         },
         {
           "instance": "https://invidious.slipfox.xyz",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.privacydev.net",
@@ -3187,7 +3153,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -3328,6 +3294,10 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.ducks.party",
+          "status": 500
+        },
+        {
           "instance": "https://invidious.nerdvpn.de",
           "status": null,
           "error": "fetch failed"
@@ -3344,16 +3314,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -3400,8 +3360,13 @@
         "https://inv2.nadeko.net",
         "https://inv3.nadeko.net",
         "https://inv4.nadeko.net",
+        "https://inv5.nadeko.net",
+        "https://inv6.nadeko.net",
+        "https://inv7.nadeko.net",
+        "https://inv8.nadeko.net",
         "https://inv9.nadeko.net",
         "https://inv.riverside.rocks",
+        "https://inv.zzls.xyz",
         "https://invidious.tiekoetter.com",
         "https://invidious.perennialte.ch",
         "https://invidious.kavin.rocks",
@@ -3414,7 +3379,7 @@
     "search/filters": {
       "endpoint": "search/filters",
       "sample_path": "/api/v1/search/filters",
-      "checked_at": "2026-06-25T13:47:00.932Z",
+      "checked_at": "2026-06-25T14:16:49.730Z",
       "cache_ttl_seconds": 600,
       "total": 104,
       "working_count": 0,
@@ -3551,7 +3516,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -3621,8 +3586,7 @@
         },
         {
           "instance": "https://invidious.snopyta.org",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.kavin.rocks",
@@ -3666,7 +3630,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -3822,7 +3786,8 @@
         },
         {
           "instance": "https://invidious.darkness.services",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.schenkel.eti.br",
@@ -3830,13 +3795,11 @@
         },
         {
           "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
+          "status": 200
         },
         {
           "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://y.com.sb",
@@ -3915,14 +3878,15 @@
     "channel": {
       "endpoint": "channels/:id",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA",
-      "checked_at": "2026-06-25T13:47:16.432Z",
+      "checked_at": "2026-06-25T14:17:05.137Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 4,
+      "failed_count": 100,
       "working_instances": [
         "https://iv.catgirl.cloud",
-        "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -4052,7 +4016,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -4073,13 +4037,11 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -4168,7 +4130,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -4309,6 +4271,11 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.ducks.party",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
           "instance": "https://invidious.nerdvpn.de",
           "status": null,
           "error": "fetch failed"
@@ -4325,16 +4292,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -4357,7 +4314,7 @@
         {
           "instance": "https://invidious.flokinet.to",
           "status": null,
-          "error": "fetch failed"
+          "error": "timeout"
         },
         {
           "instance": "https://lekker.gay",
@@ -4409,14 +4366,16 @@
     "channel/videos": {
       "endpoint": "channels/:id/videos",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/videos",
-      "checked_at": "2026-06-25T13:47:31.936Z",
+      "checked_at": "2026-06-25T14:17:18.722Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 5,
+      "failed_count": 99,
       "working_instances": [
         "https://iv.catgirl.cloud",
-        "https://invidious.ducks.party",
+        "https://invidious.darkness.services",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -4546,7 +4505,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -4660,7 +4619,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -4801,6 +4760,11 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.ducks.party",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
           "instance": "https://invidious.nerdvpn.de",
           "status": null,
           "error": "fetch failed"
@@ -4811,22 +4775,8 @@
           "error": "fetch failed"
         },
         {
-          "instance": "https://invidious.darkness.services",
-          "status": 429
-        },
-        {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -4848,8 +4798,7 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "instance": "https://lekker.gay",
@@ -4901,14 +4850,17 @@
     "channel/shorts": {
       "endpoint": "channels/:id/shorts",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/shorts",
-      "checked_at": "2026-06-25T13:47:47.440Z",
+      "checked_at": "2026-06-25T14:17:32.321Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 7,
+      "failed_count": 97,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.darkness.services",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -5039,7 +4991,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -5064,8 +5016,7 @@
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -5089,7 +5040,8 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -5154,7 +5106,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -5305,22 +5257,8 @@
           "error": "fetch failed"
         },
         {
-          "instance": "https://invidious.darkness.services",
-          "status": 429
-        },
-        {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -5342,8 +5280,7 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "instance": "https://lekker.gay",
@@ -5391,14 +5328,16 @@
     "channel/streams": {
       "endpoint": "channels/:id/streams",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/streams",
-      "checked_at": "2026-06-25T13:48:03.032Z",
+      "checked_at": "2026-06-25T14:17:46.123Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -5529,7 +5468,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -5537,7 +5476,8 @@
         },
         {
           "instance": "https://inv.zzls.xyz",
-          "status": 403
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.in.projectsegfau.lt",
@@ -5554,8 +5494,7 @@
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -5579,8 +5518,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -5645,7 +5583,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -5804,16 +5742,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -5833,7 +5761,8 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://lekker.gay",
@@ -5868,7 +5797,6 @@
         "https://inv8.nadeko.net",
         "https://inv9.nadeko.net",
         "https://inv.riverside.rocks",
-        "https://inv.zzls.xyz",
         "https://invidious.tiekoetter.com",
         "https://invidious.perennialte.ch",
         "https://invidious.kavin.rocks",
@@ -5881,14 +5809,16 @@
     "channel/playlists": {
       "endpoint": "channels/:id/playlists",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/playlists",
-      "checked_at": "2026-06-25T13:48:18.529Z",
+      "checked_at": "2026-06-25T14:17:59.627Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -6019,7 +5949,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -6133,8 +6063,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -6293,16 +6222,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -6322,8 +6241,7 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "instance": "https://lekker.gay",
@@ -6371,14 +6289,16 @@
     "channel/search": {
       "endpoint": "channels/:id/search",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/search?q=test",
-      "checked_at": "2026-06-25T13:48:33.939Z",
+      "checked_at": "2026-06-25T14:18:13.325Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -6472,13 +6392,11 @@
         },
         {
           "instance": "https://inv8.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv9.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv.vern.cc",
@@ -6511,7 +6429,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -6532,13 +6450,11 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -6562,8 +6478,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -6628,8 +6543,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -6788,16 +6702,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -6849,6 +6753,8 @@
         "https://inv5.nadeko.net",
         "https://inv6.nadeko.net",
         "https://inv7.nadeko.net",
+        "https://inv8.nadeko.net",
+        "https://inv9.nadeko.net",
         "https://inv.riverside.rocks",
         "https://inv.zzls.xyz",
         "https://invidious.tiekoetter.com",
@@ -6863,14 +6769,15 @@
     "channel/comments": {
       "endpoint": "channels/:id/comments",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/comments",
-      "checked_at": "2026-06-25T13:48:49.434Z",
+      "checked_at": "2026-06-25T14:18:27.021Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 5,
+      "failed_count": 99,
       "working_instances": [
         "https://iv.catgirl.cloud",
-        "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -7001,7 +6908,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -7022,13 +6929,11 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -7052,8 +6957,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -7118,8 +7022,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -7260,6 +7163,11 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.ducks.party",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
           "instance": "https://invidious.nerdvpn.de",
           "status": null,
           "error": "fetch failed"
@@ -7276,16 +7184,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -7355,14 +7253,17 @@
     "channel/latest": {
       "endpoint": "channels/:id/latest",
       "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-      "checked_at": "2026-06-25T13:49:04.841Z",
+      "checked_at": "2026-06-25T14:18:42.437Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.darkness.services",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -7492,7 +7393,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -7513,8 +7414,7 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
@@ -7607,8 +7507,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -7759,22 +7658,8 @@
           "error": "fetch failed"
         },
         {
-          "instance": "https://invidious.darkness.services",
-          "status": 429
-        },
-        {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -7849,18 +7734,19 @@
     "playlist": {
       "endpoint": "playlists/:id",
       "sample_path": "/api/v1/playlists/PLBCF2DAC6FFB574DE",
-      "checked_at": "2026-06-25T13:49:20.238Z",
+      "checked_at": "2026-06-25T14:18:57.935Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 7,
-      "failed_count": 97,
+      "working_count": 8,
+      "failed_count": 96,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://inv.nadeko.net",
         "https://inv.zzls.xyz",
-        "https://invidious.tiekoetter.com",
         "https://invidious.f5.si",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -7986,7 +7872,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -8039,8 +7925,14 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.tiekoetter.com",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
           "instance": "https://invidious.private.coffee",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.perennialte.ch",
@@ -8048,7 +7940,8 @@
         },
         {
           "instance": "https://invidious.snopyta.org",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.kavin.rocks",
@@ -8092,8 +7985,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -8248,16 +8140,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -8277,7 +8159,8 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "instance": "https://lekker.gay",
@@ -8316,14 +8199,13 @@
     "mix": {
       "endpoint": "mixes/:rdid",
       "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:49:35.737Z",
+      "checked_at": "2026-06-25T14:19:12.527Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 2,
-      "failed_count": 102,
+      "working_count": 1,
+      "failed_count": 103,
       "working_instances": [
-        "https://iv.catgirl.cloud",
-        "https://invidious.ducks.party"
+        "https://yt.thechangebook.org"
       ],
       "failed_instances": [
         {
@@ -8375,6 +8257,10 @@
         {
           "instance": "https://iv.ok0.org",
           "status": 404
+        },
+        {
+          "instance": "https://iv.catgirl.cloud",
+          "status": 500
         },
         {
           "instance": "https://iv.nowhere.moe",
@@ -8452,7 +8338,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -8473,13 +8359,11 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -8569,8 +8453,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -8711,6 +8594,10 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.ducks.party",
+          "status": 500
+        },
+        {
           "instance": "https://invidious.nerdvpn.de",
           "status": null,
           "error": "fetch failed"
@@ -8730,13 +8617,11 @@
         },
         {
           "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
+          "status": 500
         },
         {
           "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
+          "status": 500
         },
         {
           "instance": "https://y.com.sb",
@@ -8768,10 +8653,6 @@
         {
           "instance": "https://rust.oskamp.nl",
           "status": 404
-        },
-        {
-          "instance": "https://yt.thechangebook.org",
-          "status": 500
         },
         {
           "instance": "https://app.materialio.us",
@@ -8815,7 +8696,7 @@
     "clip": {
       "endpoint": "clips/:id",
       "sample_path": "/api/v1/clips/UgkxR4bMqXzqFmVz-oXBXxkbJV5DRf8HJGU1",
-      "checked_at": "2026-06-25T13:49:51.333Z",
+      "checked_at": "2026-06-25T14:19:26.119Z",
       "cache_ttl_seconds": 600,
       "total": 104,
       "working_count": 2,
@@ -8951,7 +8832,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -9000,8 +8881,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -9066,8 +8946,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -9231,13 +9110,11 @@
         },
         {
           "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
+          "status": 400
         },
         {
           "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
+          "status": 400
         },
         {
           "instance": "https://y.com.sb",
@@ -9312,14 +9189,17 @@
     "trending": {
       "endpoint": "trending",
       "sample_path": "/api/v1/trending",
-      "checked_at": "2026-06-25T13:50:06.829Z",
+      "checked_at": "2026-06-25T14:19:41.634Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.darkness.services",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -9449,7 +9329,7 @@
         },
         {
           "instance": "https://inv.pistasjis.net",
-          "status": 429
+          "status": 200
         },
         {
           "instance": "https://inv.riverside.rocks",
@@ -9470,11 +9350,13 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -9498,8 +9380,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -9564,8 +9445,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -9716,22 +9596,8 @@
           "error": "fetch failed"
         },
         {
-          "instance": "https://invidious.darkness.services",
-          "status": 429
-        },
-        {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -9753,7 +9619,8 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "instance": "https://lekker.gay",
@@ -9805,15 +9672,17 @@
     "trending/music": {
       "endpoint": "trending/music",
       "sample_path": "/api/v1/trending?type=music",
-      "checked_at": "2026-06-25T13:50:20.419Z",
+      "checked_at": "2026-06-25T14:19:55.422Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.darkness.services",
         "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -9906,8 +9775,7 @@
         },
         {
           "instance": "https://inv8.nadeko.net",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://inv9.nadeko.net",
@@ -9952,7 +9820,8 @@
         },
         {
           "instance": "https://inv.zzls.xyz",
-          "status": 403
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.in.projectsegfau.lt",
@@ -9965,12 +9834,12 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -10059,7 +9928,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -10210,17 +10079,8 @@
           "error": "fetch failed"
         },
         {
-          "instance": "https://invidious.darkness.services",
-          "status": 429
-        },
-        {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -10278,9 +10138,9 @@
         "https://inv5.nadeko.net",
         "https://inv6.nadeko.net",
         "https://inv7.nadeko.net",
+        "https://inv8.nadeko.net",
         "https://inv9.nadeko.net",
         "https://inv.riverside.rocks",
-        "https://inv.zzls.xyz",
         "https://invidious.tiekoetter.com",
         "https://invidious.perennialte.ch",
         "https://invidious.kavin.rocks",
@@ -10293,14 +10153,16 @@
     "trending/gaming": {
       "endpoint": "trending/gaming",
       "sample_path": "/api/v1/trending?type=gaming",
-      "checked_at": "2026-06-25T13:50:36.035Z",
+      "checked_at": "2026-06-25T14:20:09.123Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 5,
+      "failed_count": 99,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -10451,8 +10313,7 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
@@ -10490,13 +10351,11 @@
         },
         {
           "instance": "https://invidious.tiekoetter.com",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://invidious.private.coffee",
-          "status": null,
-          "error": "fetch failed"
+          "status": 502
         },
         {
           "instance": "https://invidious.perennialte.ch",
@@ -10504,8 +10363,7 @@
         },
         {
           "instance": "https://invidious.snopyta.org",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.kavin.rocks",
@@ -10549,7 +10407,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -10708,16 +10566,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -10737,8 +10585,7 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "instance": "https://lekker.gay",
@@ -10778,6 +10625,7 @@
         "https://inv9.nadeko.net",
         "https://inv.riverside.rocks",
         "https://inv.zzls.xyz",
+        "https://invidious.tiekoetter.com",
         "https://invidious.perennialte.ch",
         "https://invidious.kavin.rocks",
         "https://invidious.domain.glass",
@@ -10789,14 +10637,15 @@
     "trending/news": {
       "endpoint": "trending/news",
       "sample_path": "/api/v1/trending?type=news",
-      "checked_at": "2026-06-25T13:50:51.638Z",
+      "checked_at": "2026-06-25T14:20:22.824Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 4,
+      "failed_count": 100,
       "working_instances": [
         "https://iv.catgirl.cloud",
-        "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -10975,8 +10824,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -11041,7 +10889,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -11182,6 +11030,11 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://invidious.ducks.party",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
           "instance": "https://invidious.nerdvpn.de",
           "status": null,
           "error": "fetch failed"
@@ -11198,16 +11051,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -11281,14 +11124,17 @@
     "trending/movies": {
       "endpoint": "trending/movies",
       "sample_path": "/api/v1/trending?type=movies",
-      "checked_at": "2026-06-25T13:51:07.132Z",
+      "checked_at": "2026-06-25T14:20:38.338Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 3,
-      "failed_count": 101,
+      "working_count": 6,
+      "failed_count": 98,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://invidious.ducks.party",
+        "https://invidious.darkness.services",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://inv.kamuridesu.com"
       ],
       "failed_instances": [
@@ -11443,7 +11289,8 @@
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -11532,7 +11379,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -11683,22 +11530,8 @@
           "error": "fetch failed"
         },
         {
-          "instance": "https://invidious.darkness.services",
-          "status": 429
-        },
-        {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -11720,7 +11553,8 @@
         },
         {
           "instance": "https://invidious.flokinet.to",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "instance": "https://lekker.gay",
@@ -11772,15 +11606,18 @@
     "popular": {
       "endpoint": "popular",
       "sample_path": "/api/v1/popular",
-      "checked_at": "2026-06-25T13:51:22.537Z",
+      "checked_at": "2026-06-25T14:20:52.121Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 4,
-      "failed_count": 100,
+      "working_count": 7,
+      "failed_count": 97,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://inv.nadeko.net",
+        "https://inv.zzls.xyz",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://invidious.flokinet.to",
         "https://yt.thechangebook.org"
       ],
       "failed_instances": [
@@ -11910,13 +11747,7 @@
         },
         {
           "instance": "https://inv.riverside.rocks",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "instance": "https://inv.zzls.xyz",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.in.projectsegfau.lt",
@@ -11929,8 +11760,7 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
@@ -11959,8 +11789,7 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -12025,7 +11854,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -12184,14 +12013,8 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
           "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "instance": "https://y.com.sb",
@@ -12210,10 +12033,6 @@
           "instance": "https://yt.artemislena.eu",
           "status": null,
           "error": "fetch failed"
-        },
-        {
-          "instance": "https://invidious.flokinet.to",
-          "status": 502
         },
         {
           "instance": "https://lekker.gay",
@@ -12242,6 +12061,7 @@
         "https://yewtu.be",
         "https://iv.duti.dev",
         "https://inv.vern.cc",
+        "https://inv.riverside.rocks",
         "https://invidious.tiekoetter.com",
         "https://invidious.perennialte.ch",
         "https://invidious.kavin.rocks",
@@ -12249,6 +12069,7 @@
         "https://invidious.epicsite.xyz",
         "https://invidious.f5.si",
         "https://invidious.schenkel.eti.br",
+        "https://yt.omada.cafe",
         "https://yt.vern.cc",
         "https://inv.kamuridesu.com"
       ]
@@ -12256,16 +12077,18 @@
     "hashtag": {
       "endpoint": "hashtag/:tag",
       "sample_path": "/api/v1/hashtag/music",
-      "checked_at": "2026-06-25T13:51:38.028Z",
+      "checked_at": "2026-06-25T14:21:07.633Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 6,
-      "failed_count": 98,
+      "working_count": 8,
+      "failed_count": 96,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://inv.nadeko.net",
         "https://inv.zzls.xyz",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -12413,8 +12236,7 @@
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -12448,11 +12270,13 @@
         },
         {
           "instance": "https://invidious.tiekoetter.com",
-          "status": 403
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.private.coffee",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.perennialte.ch",
@@ -12460,7 +12284,8 @@
         },
         {
           "instance": "https://invidious.snopyta.org",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.kavin.rocks",
@@ -12504,7 +12329,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -12663,16 +12488,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -12718,7 +12533,6 @@
         "https://yewtu.be",
         "https://iv.duti.dev",
         "https://inv.riverside.rocks",
-        "https://invidious.tiekoetter.com",
         "https://invidious.perennialte.ch",
         "https://invidious.kavin.rocks",
         "https://invidious.domain.glass",
@@ -12730,16 +12544,18 @@
     "resolveurl": {
       "endpoint": "resolveurl",
       "sample_path": "/api/v1/resolveurl?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ",
-      "checked_at": "2026-06-25T13:51:53.532Z",
+      "checked_at": "2026-06-25T14:21:23.232Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 6,
-      "failed_count": 98,
+      "working_count": 8,
+      "failed_count": 96,
       "working_instances": [
         "https://iv.catgirl.cloud",
         "https://inv.nadeko.net",
         "https://inv.zzls.xyz",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -12883,11 +12699,13 @@
         },
         {
           "instance": "https://inv.bp.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -12911,7 +12729,8 @@
         },
         {
           "instance": "https://invidious.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://invidious.adminforge.de",
@@ -12976,7 +12795,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -13133,16 +12952,6 @@
         {
           "instance": "https://invidious.schenkel.eti.br",
           "status": 403
-        },
-        {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "instance": "https://y.com.sb",
@@ -13202,11 +13011,11 @@
     "stats": {
       "endpoint": "stats",
       "sample_path": "/api/v1/stats",
-      "checked_at": "2026-06-25T13:52:08.936Z",
+      "checked_at": "2026-06-25T14:21:37.324Z",
       "cache_ttl_seconds": 600,
       "total": 104,
-      "working_count": 12,
-      "failed_count": 92,
+      "working_count": 13,
+      "failed_count": 91,
       "working_instances": [
         "https://yewtu.be",
         "https://iv.catgirl.cloud",
@@ -13216,8 +13025,9 @@
         "https://invidious.tiekoetter.com",
         "https://invidious.f5.si",
         "https://invidious.ducks.party",
+        "https://invidious.ritoge.com",
+        "https://yt.omada.cafe",
         "https://yt.vern.cc",
-        "https://invidious.flokinet.to",
         "https://yt.thechangebook.org",
         "https://inv.kamuridesu.com"
       ],
@@ -13357,7 +13167,8 @@
         },
         {
           "instance": "https://inv.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://inv.sg.projectsegfau.lt",
@@ -13442,7 +13253,7 @@
         },
         {
           "instance": "https://invidious.xyz",
-          "status": 200
+          "status": 429
         },
         {
           "instance": "https://invidious.weblibre.org",
@@ -13597,16 +13408,6 @@
           "status": 403
         },
         {
-          "instance": "https://invidious.ritoge.com",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "instance": "https://yt.omada.cafe",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "instance": "https://y.com.sb",
           "status": null,
           "error": "fetch failed"
@@ -13619,6 +13420,10 @@
           "instance": "https://yt.artemislena.eu",
           "status": null,
           "error": "fetch failed"
+        },
+        {
+          "instance": "https://invidious.flokinet.to",
+          "status": 502
         },
         {
           "instance": "https://lekker.gay",
