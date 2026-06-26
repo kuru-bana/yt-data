@@ -1,11 +1,11 @@
 {
   "endpoint": "comments/:id",
   "sample_path": "/api/v1/comments/dQw4w9WgXcQ",
-  "checked_at": "2026-06-26T11:45:24.527Z",
+  "checked_at": "2026-06-26T12:00:28.032Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 9,
-  "failed_count": 95,
+  "working_count": 7,
+  "failed_count": 97,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
@@ -13,14 +13,13 @@
     "https://invidious.tiekoetter.com",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
-    "https://invidious.ritoge.com",
-    "https://invidious.flokinet.to",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -400,6 +399,11 @@
       "status": 403
     },
     {
+      "instance": "https://invidious.ritoge.com",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://yt.omada.cafe",
       "status": 502
     },
@@ -420,6 +424,10 @@
       "instance": "https://yt.artemislena.eu",
       "status": null,
       "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.flokinet.to",
+      "status": 502
     },
     {
       "instance": "https://lekker.gay",
@@ -445,7 +453,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.perennialte.ch",
