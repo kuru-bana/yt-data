@@ -1,15 +1,14 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-06-26T20:03:42.125Z",
+  "checked_at": "2026-06-26T20:18:41.234Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 5,
-  "failed_count": 99,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://inv.kamuridesu.com"
   ],
@@ -406,6 +405,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -433,7 +436,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
