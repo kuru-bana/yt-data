@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-27T07:07:13.934Z",
+  "checked_at": "2026-06-27T07:22:13.140Z",
   "total_instances": 104,
   "total_endpoints": 25,
   "instances": [
@@ -142,6 +142,58 @@
       ]
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "total_endpoints": 25,
+      "working_count": 20,
+      "failed_count": 5,
+      "availability": 80,
+      "working_endpoints": [
+        "comments",
+        "search",
+        "search/suggestions",
+        "channel",
+        "channel/videos",
+        "channel/shorts",
+        "channel/streams",
+        "channel/playlists",
+        "channel/search",
+        "channel/comments",
+        "channel/latest",
+        "trending",
+        "trending/music",
+        "trending/gaming",
+        "trending/news",
+        "trending/movies",
+        "popular",
+        "hashtag",
+        "resolveurl",
+        "stats"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "video",
+          "status": 500
+        },
+        {
+          "endpoint": "captions",
+          "status": 500
+        },
+        {
+          "endpoint": "transcripts",
+          "status": 500
+        },
+        {
+          "endpoint": "playlist",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
+          "endpoint": "mix",
+          "status": 500
+        }
+      ]
+    },
+    {
       "instance": "https://inv.kamuridesu.com",
       "total_endpoints": 25,
       "working_count": 18,
@@ -151,12 +203,12 @@
         "comments",
         "search",
         "search/suggestions",
+        "channel",
         "channel/videos",
         "channel/shorts",
         "channel/streams",
         "channel/playlists",
-        "channel/comments",
-        "channel/latest",
+        "channel/search",
         "playlist",
         "trending",
         "trending/music",
@@ -181,12 +233,12 @@
           "status": 500
         },
         {
-          "endpoint": "channel",
+          "endpoint": "channel/comments",
           "status": null,
           "error": "timeout"
         },
         {
-          "endpoint": "channel/search",
+          "endpoint": "channel/latest",
           "status": null,
           "error": "timeout"
         },
@@ -374,14 +426,13 @@
     {
       "instance": "https://inv.zzls.xyz",
       "total_endpoints": 25,
-      "working_count": 7,
-      "failed_count": 18,
-      "availability": 28,
+      "working_count": 6,
+      "failed_count": 19,
+      "availability": 24,
       "working_endpoints": [
         "comments",
         "captions",
         "playlist",
-        "popular",
         "hashtag",
         "resolveurl",
         "stats"
@@ -457,7 +508,13 @@
         },
         {
           "endpoint": "trending/movies",
-          "status": 403
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
+          "endpoint": "popular",
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -487,8 +544,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "search/suggestions",
@@ -529,8 +585,7 @@
         },
         {
           "endpoint": "mix",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "trending",
@@ -542,7 +597,8 @@
         },
         {
           "endpoint": "trending/gaming",
-          "status": 403
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending/news",
@@ -665,123 +721,6 @@
         {
           "endpoint": "resolveurl",
           "status": 403
-        }
-      ]
-    },
-    {
-      "instance": "https://invidious.flokinet.to",
-      "total_endpoints": 25,
-      "working_count": 2,
-      "failed_count": 23,
-      "availability": 8,
-      "working_endpoints": [
-        "popular",
-        "stats"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "video",
-          "status": 502
-        },
-        {
-          "endpoint": "comments",
-          "status": 502
-        },
-        {
-          "endpoint": "captions",
-          "status": 500
-        },
-        {
-          "endpoint": "transcripts",
-          "status": 500
-        },
-        {
-          "endpoint": "search",
-          "status": 400
-        },
-        {
-          "endpoint": "search/suggestions",
-          "status": 502
-        },
-        {
-          "endpoint": "channel",
-          "status": 500
-        },
-        {
-          "endpoint": "channel/videos",
-          "status": 500
-        },
-        {
-          "endpoint": "channel/shorts",
-          "status": 500
-        },
-        {
-          "endpoint": "channel/streams",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "channel/playlists",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "channel/search",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "channel/comments",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "channel/latest",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "playlist",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "mix",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "trending",
-          "status": 502
-        },
-        {
-          "endpoint": "trending/music",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "trending/gaming",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "trending/news",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "trending/movies",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "hashtag",
-          "status": 502
-        },
-        {
-          "endpoint": "resolveurl",
-          "status": null,
-          "error": "timeout"
         }
       ]
     },
@@ -2780,8 +2719,7 @@
         },
         {
           "endpoint": "channel/latest",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "playlist",
@@ -2892,8 +2830,7 @@
         },
         {
           "endpoint": "channel/latest",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "playlist",
@@ -3333,8 +3270,7 @@
         },
         {
           "endpoint": "channel/comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "channel/latest",
@@ -3397,8 +3333,7 @@
       "failed_endpoints": [
         {
           "endpoint": "video",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "comments",
@@ -4666,12 +4601,12 @@
         },
         {
           "endpoint": "search/suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel/videos",
@@ -4727,8 +4662,7 @@
         },
         {
           "endpoint": "trending/movies",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "popular",
@@ -4778,8 +4712,7 @@
         },
         {
           "endpoint": "search/suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
@@ -4799,8 +4732,7 @@
         },
         {
           "endpoint": "channel/playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel/search",
@@ -4808,7 +4740,8 @@
         },
         {
           "endpoint": "channel/comments",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel/latest",
@@ -4840,12 +4773,12 @@
         },
         {
           "endpoint": "trending/movies",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "popular",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "hashtag",
@@ -5427,8 +5360,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "search/suggestions",
@@ -5485,12 +5417,12 @@
         },
         {
           "endpoint": "trending/gaming",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending/news",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "trending/movies",
@@ -5510,7 +5442,8 @@
         },
         {
           "endpoint": "stats",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -5675,8 +5608,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 502
         },
         {
           "endpoint": "search/suggestions",
@@ -5704,7 +5636,8 @@
         },
         {
           "endpoint": "channel/search",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel/comments",
@@ -5720,8 +5653,7 @@
         },
         {
           "endpoint": "mix",
-          "status": null,
-          "error": "fetch failed"
+          "status": 502
         },
         {
           "endpoint": "trending",
@@ -5898,8 +5830,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "search/suggestions",
@@ -5919,8 +5850,7 @@
         },
         {
           "endpoint": "channel/streams",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel/playlists",
@@ -5944,8 +5874,7 @@
         },
         {
           "endpoint": "mix",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "trending",
@@ -6498,13 +6427,11 @@
         },
         {
           "endpoint": "transcripts",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "search/suggestions",
@@ -7152,31 +7079,38 @@
         },
         {
           "endpoint": "channel/search",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel/comments",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel/latest",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlist",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "mix",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending/music",
-          "status": 429
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending/gaming",
