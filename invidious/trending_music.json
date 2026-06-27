@@ -1,15 +1,16 @@
 {
   "endpoint": "trending/music",
   "sample_path": "/api/v1/trending?type=music",
-  "checked_at": "2026-06-27T09:50:22.829Z",
+  "checked_at": "2026-06-27T10:05:22.534Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://yt.omada.cafe"
+    "https://yt.omada.cafe",
+    "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
@@ -208,7 +209,8 @@
     },
     {
       "instance": "https://invidious.snopyta.org",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.kavin.rocks",
@@ -253,8 +255,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -437,7 +438,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
@@ -456,11 +458,6 @@
     {
       "instance": "https://app.materialio.us",
       "status": 404
-    },
-    {
-      "instance": "https://inv.kamuridesu.com",
-      "status": null,
-      "error": "timeout"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
