@@ -1,12 +1,13 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-06-29T06:34:04.634Z",
+  "checked_at": "2026-06-29T06:49:04.638Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
+    "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://yt.omada.cafe",
     "https://inv.kamuridesu.com"
@@ -63,19 +64,13 @@
       "status": 404
     },
     {
-      "instance": "https://iv.catgirl.cloud",
-      "status": null,
-      "error": "fetch failed"
-    },
-    {
       "instance": "https://iv.nowhere.moe",
       "status": null,
       "error": "fetch failed"
     },
     {
       "instance": "https://inv.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv1.nadeko.net",
@@ -259,8 +254,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -443,7 +437,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
@@ -471,6 +466,7 @@
   "cloudflare_instances": [
     "https://yewtu.be",
     "https://iv.duti.dev",
+    "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
     "https://inv3.nadeko.net",
