@@ -1,13 +1,14 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-07-01T14:19:36.235Z",
+  "checked_at": "2026-07-01T14:34:36.329Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
+  "working_count": 2,
+  "failed_count": 102,
   "working_instances": [
-    "https://invidious.ducks.party"
+    "https://invidious.ducks.party",
+    "https://yt.thechangebook.org"
   ],
   "failed_instances": [
     {
@@ -161,11 +162,13 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -255,8 +258,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -408,7 +410,7 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 429
+      "status": 404
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
@@ -443,7 +445,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
@@ -453,10 +456,6 @@
     {
       "instance": "https://rust.oskamp.nl",
       "status": 404
-    },
-    {
-      "instance": "https://yt.thechangebook.org",
-      "status": 500
     },
     {
       "instance": "https://app.materialio.us",
