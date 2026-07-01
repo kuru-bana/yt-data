@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-01T14:17:49.473Z",
+  "checked_at": "2026-07-01T14:32:51.074Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -30,35 +30,6 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
-      "total_endpoints": 12,
-      "working_count": 10,
-      "failed_count": 2,
-      "availability": 83,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors",
-        "c"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "user",
-          "status": 500
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
       "instance": "https://pipedapi.winscloud.net",
       "total_endpoints": 12,
       "working_count": 10,
@@ -79,6 +50,39 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
+          "status": 500
+        },
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
+      "total_endpoints": 12,
+      "working_count": 9,
+      "failed_count": 3,
+      "availability": 75,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "playlists",
+        "config",
+        "sponsors",
+        "c"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "channel",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "user",
           "status": 500
         },
         {
@@ -5037,7 +5041,8 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "comments",
