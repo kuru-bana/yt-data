@@ -1,17 +1,16 @@
 {
   "endpoint": "resolveurl",
   "sample_path": "/api/v1/resolveurl?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ",
-  "checked_at": "2026-07-03T16:21:28.719Z",
+  "checked_at": "2026-07-03T16:36:29.937Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 9,
-  "failed_count": 95,
+  "working_count": 8,
+  "failed_count": 96,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv.zzls.xyz",
     "https://invidious.ducks.party",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://yt.thechangebook.org",
@@ -20,8 +19,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -188,8 +186,7 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -198,7 +195,8 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.private.coffee",
@@ -405,6 +403,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -428,7 +430,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
@@ -450,9 +453,9 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
-    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.domain.glass",
