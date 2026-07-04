@@ -1,34 +1,8 @@
 {
-  "checked_at": "2026-07-04T01:32:49.370Z",
+  "checked_at": "2026-07-04T02:02:49.669Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
-    {
-      "instance": "https://pipedapi.wireway.ch",
-      "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
@@ -77,6 +51,39 @@
         {
           "endpoint": "streams",
           "status": 500
+        },
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://pipedapi.wireway.ch",
+      "total_endpoints": 12,
+      "working_count": 9,
+      "failed_count": 3,
+      "availability": 75,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "c",
+        "user"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "config",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "sponsors",
+          "status": 502
         },
         {
           "endpoint": "dearrow",
@@ -1388,7 +1395,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -1490,7 +1498,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
@@ -2155,11 +2164,12 @@
         },
         {
           "endpoint": "config",
-          "status": 200
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "sponsors",
-          "status": 200
+          "status": 502
         },
         {
           "endpoint": "c",
@@ -4467,7 +4477,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
@@ -5058,33 +5069,27 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         }
       ]
     },
