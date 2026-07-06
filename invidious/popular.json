@@ -1,7 +1,7 @@
 {
   "endpoint": "popular",
   "sample_path": "/api/v1/popular",
-  "checked_at": "2026-07-06T09:21:09.936Z",
+  "checked_at": "2026-07-06T09:36:10.825Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 8,
@@ -19,12 +19,12 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": null,
-      "error": "timeout"
+      "status": 502
     },
     {
       "instance": "https://iv.melmac.space",
@@ -62,7 +62,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -448,7 +449,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.vern.cc",
     "https://inv.riverside.rocks",
