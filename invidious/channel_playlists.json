@@ -1,14 +1,13 @@
 {
   "endpoint": "channels/:id/playlists",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/playlists",
-  "checked_at": "2026-07-08T23:18:12.836Z",
+  "checked_at": "2026-07-08T23:33:14.044Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 7,
-  "failed_count": 97,
+  "working_count": 6,
+  "failed_count": 98,
   "working_instances": [
     "https://iv.catgirl.cloud",
-    "https://invidious.darkness.services",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
@@ -22,7 +21,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -414,6 +414,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.darkness.services",
+      "status": 429
+    },
+    {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
     },
@@ -432,8 +436,7 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
+      "status": 502
     },
     {
       "instance": "https://lekker.gay",
