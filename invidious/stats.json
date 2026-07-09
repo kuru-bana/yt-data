@@ -1,7 +1,7 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-07-09T06:36:59.921Z",
+  "checked_at": "2026-07-09T06:51:59.441Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 13,
@@ -24,7 +24,8 @@
   "failed_instances": [
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -111,7 +112,8 @@
     },
     {
       "instance": "https://inv.odyssey346.dev",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.perditum.com",
@@ -152,11 +154,13 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -241,8 +245,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
