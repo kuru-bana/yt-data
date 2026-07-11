@@ -1,12 +1,13 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-07-11T09:18:43.225Z",
+  "checked_at": "2026-07-11T09:33:42.228Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
+    "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
     "https://inv.kamuridesu.com"
@@ -14,8 +15,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -58,17 +58,11 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
       "status": 404
-    },
-    {
-      "instance": "https://iv.catgirl.cloud",
-      "status": null,
-      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -121,8 +115,7 @@
     },
     {
       "instance": "https://inv.odyssey346.dev",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.perditum.com",
@@ -167,11 +160,13 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -260,8 +255,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -470,6 +464,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
