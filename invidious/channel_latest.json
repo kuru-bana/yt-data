@@ -1,24 +1,24 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-07-12T13:33:44.830Z",
+  "checked_at": "2026-07-12T13:48:35.320Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 6,
-  "failed_count": 98,
+  "working_count": 7,
+  "failed_count": 97,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
+    "https://invidious.flokinet.to",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -61,8 +61,7 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://iv.ok0.org",
@@ -107,11 +106,13 @@
     },
     {
       "instance": "https://inv8.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.vern.cc",
@@ -257,7 +258,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -430,11 +432,6 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
-    },
-    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -458,6 +455,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -467,8 +465,6 @@
     "https://inv5.nadeko.net",
     "https://inv6.nadeko.net",
     "https://inv7.nadeko.net",
-    "https://inv8.nadeko.net",
-    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
