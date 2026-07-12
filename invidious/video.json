@@ -1,7 +1,7 @@
 {
   "endpoint": "videos/:id",
   "sample_path": "/api/v1/videos/dQw4w9WgXcQ",
-  "checked_at": "2026-07-12T07:45:10.617Z",
+  "checked_at": "2026-07-12T08:00:12.534Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 2,
@@ -13,8 +13,7 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -234,7 +233,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -438,7 +437,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 500
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
@@ -468,6 +468,7 @@
     }
   ],
   "cloudflare_instances": [
+    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
