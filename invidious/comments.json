@@ -1,15 +1,14 @@
 {
   "endpoint": "comments/:id",
   "sample_path": "/api/v1/comments/dQw4w9WgXcQ",
-  "checked_at": "2026-07-12T22:45:24.865Z",
+  "checked_at": "2026-07-12T23:00:24.329Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 12,
-  "failed_count": 92,
+  "working_count": 11,
+  "failed_count": 93,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
-    "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
@@ -23,7 +22,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -107,11 +107,13 @@
     },
     {
       "instance": "https://inv8.nadeko.net",
-      "status": 418
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": 418
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.vern.cc",
@@ -150,6 +152,11 @@
       "status": 200
     },
     {
+      "instance": "https://inv.zzls.xyz",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
       "instance": "https://inv.in.projectsegfau.lt",
       "status": 200
     },
@@ -160,13 +167,11 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -251,7 +256,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -438,7 +443,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.perennialte.ch",
