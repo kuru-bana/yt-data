@@ -1,11 +1,11 @@
 {
   "endpoint": "resolveurl",
   "sample_path": "/api/v1/resolveurl?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ",
-  "checked_at": "2026-07-14T08:36:25.334Z",
+  "checked_at": "2026-07-14T08:51:23.624Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 9,
-  "failed_count": 95,
+  "working_count": 10,
+  "failed_count": 94,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
@@ -14,13 +14,15 @@
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
+    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -157,13 +159,11 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -252,8 +252,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -425,11 +424,6 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
-    },
-    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -449,7 +443,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.tiekoetter.com",
