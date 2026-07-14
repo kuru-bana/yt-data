@@ -1,11 +1,11 @@
 {
   "endpoint": "popular",
   "sample_path": "/api/v1/popular",
-  "checked_at": "2026-07-14T09:35:41.423Z",
+  "checked_at": "2026-07-14T09:50:57.216Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 8,
-  "failed_count": 96,
+  "working_count": 7,
+  "failed_count": 97,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
@@ -13,13 +13,13 @@
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
     "https://y.com.sb",
-    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org"
   ],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -83,7 +83,8 @@
     },
     {
       "instance": "https://inv3.nadeko.net",
-      "status": 418
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv4.nadeko.net",
@@ -425,6 +426,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "status": 502
+    },
+    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -448,7 +453,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.vern.cc",
     "https://inv.riverside.rocks",
