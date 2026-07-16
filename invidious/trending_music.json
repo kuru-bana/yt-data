@@ -1,7 +1,7 @@
 {
   "endpoint": "trending/music",
   "sample_path": "/api/v1/trending?type=music",
-  "checked_at": "2026-07-16T19:19:44.628Z",
+  "checked_at": "2026-07-16T19:34:43.524Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 7,
@@ -18,7 +18,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -257,8 +258,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -454,7 +454,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
