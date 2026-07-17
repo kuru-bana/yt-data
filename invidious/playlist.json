@@ -1,7 +1,7 @@
 {
   "endpoint": "playlists/:id",
   "sample_path": "/api/v1/playlists/PLBCF2DAC6FFB574DE",
-  "checked_at": "2026-07-17T18:03:55.526Z",
+  "checked_at": "2026-07-17T18:18:55.520Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 10,
@@ -21,7 +21,8 @@
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://vid.puffyan.us",
@@ -253,8 +254,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -446,7 +446,6 @@
     }
   ],
   "cloudflare_instances": [
-    "https://yewtu.be",
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
     "https://invidious.perennialte.ch",
