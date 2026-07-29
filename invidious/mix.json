@@ -1,14 +1,12 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-07-29T11:04:04.134Z",
+  "checked_at": "2026-07-29T11:19:08.344Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
-  "working_instances": [
-    "https://yt.thechangebook.org"
-  ],
+  "working_count": 0,
+  "failed_count": 104,
+  "working_instances": [],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
@@ -46,7 +44,8 @@
     },
     {
       "instance": "https://iv.duti.dev",
-      "status": 403
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.datura.network",
@@ -165,8 +164,7 @@
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -190,7 +188,8 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -199,11 +198,13 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -257,8 +258,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -460,6 +460,10 @@
       "status": 404
     },
     {
+      "instance": "https://yt.thechangebook.org",
+      "status": 500
+    },
+    {
       "instance": "https://app.materialio.us",
       "status": 404
     },
@@ -475,7 +479,6 @@
   ],
   "cloudflare_instances": [
     "https://yewtu.be",
-    "https://iv.duti.dev",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
@@ -488,7 +491,6 @@
     "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
-    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.epicsite.xyz",
