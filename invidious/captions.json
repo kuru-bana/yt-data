@@ -1,14 +1,13 @@
 {
   "endpoint": "captions/:id",
   "sample_path": "/api/v1/captions/dQw4w9WgXcQ",
-  "checked_at": "2026-07-29T04:45:40.834Z",
+  "checked_at": "2026-07-29T05:00:40.046Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
     "https://inv.nadeko.net",
-    "https://inv.zzls.xyz",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe"
   ],
@@ -66,7 +65,8 @@
     },
     {
       "instance": "https://iv.catgirl.cloud",
-      "status": 500
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -146,6 +146,11 @@
       "status": 200
     },
     {
+      "instance": "https://inv.zzls.xyz",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
       "instance": "https://inv.in.projectsegfau.lt",
       "status": 200
     },
@@ -161,7 +166,8 @@
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -185,7 +191,8 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -194,11 +201,13 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -230,7 +239,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -466,7 +475,6 @@
   "cloudflare_instances": [
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
-    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.epicsite.xyz",
