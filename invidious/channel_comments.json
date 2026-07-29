@@ -1,14 +1,15 @@
 {
   "endpoint": "channels/:id/comments",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/comments",
-  "checked_at": "2026-07-29T01:48:26.431Z",
+  "checked_at": "2026-07-29T02:03:25.040Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
+    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org"
   ],
   "failed_instances": [
@@ -110,7 +111,8 @@
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.vern.cc",
@@ -200,13 +202,11 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": null,
-      "error": "fetch failed"
+      "status": 502
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -260,7 +260,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -416,7 +416,7 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 500
+      "status": 429
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
@@ -437,11 +437,6 @@
     },
     {
       "instance": "https://yt.artemislena.eu",
-      "status": null,
-      "error": "fetch failed"
-    },
-    {
-      "instance": "https://invidious.flokinet.to",
       "status": null,
       "error": "fetch failed"
     },
@@ -480,9 +475,9 @@
     "https://inv6.nadeko.net",
     "https://inv7.nadeko.net",
     "https://inv8.nadeko.net",
-    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
+    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.epicsite.xyz",
