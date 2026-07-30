@@ -1,15 +1,14 @@
 {
   "endpoint": "channels/:id/videos",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/videos",
-  "checked_at": "2026-07-30T07:02:21.033Z",
+  "checked_at": "2026-07-30T07:17:25.444Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 2,
+  "failed_count": 102,
   "working_instances": [
     "https://yt.omada.cafe",
-    "https://y.com.sb",
-    "https://invidious.flokinet.to"
+    "https://y.com.sb"
   ],
   "failed_instances": [
     {
@@ -57,7 +56,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -200,8 +200,7 @@
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.private.coffee",
@@ -237,7 +236,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -442,6 +441,11 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -483,6 +487,7 @@
     "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
+    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.epicsite.xyz",
