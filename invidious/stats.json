@@ -1,11 +1,11 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-07-30T07:06:30.635Z",
+  "checked_at": "2026-07-30T07:21:40.155Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 13,
-  "failed_count": 91,
+  "working_count": 12,
+  "failed_count": 92,
   "working_instances": [
     "https://yewtu.be",
     "https://iv.catgirl.cloud",
@@ -13,7 +13,6 @@
     "https://inv.vern.cc",
     "https://inv.zzls.xyz",
     "https://invidious.f5.si",
-    "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
@@ -140,7 +139,8 @@
     },
     {
       "instance": "https://inv.riverside.rocks",
-      "status": 200
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://inv.in.projectsegfau.lt",
@@ -387,6 +387,11 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.ducks.party",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
       "instance": "https://invidious.nerdvpn.de",
       "status": null,
       "error": "fetch failed"
@@ -398,8 +403,7 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
@@ -439,7 +443,6 @@
   ],
   "cloudflare_instances": [
     "https://iv.duti.dev",
-    "https://inv.riverside.rocks",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.epicsite.xyz",
