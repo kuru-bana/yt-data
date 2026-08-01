@@ -1,16 +1,17 @@
 {
   "endpoint": "search",
   "sample_path": "/api/v1/search?q=test",
-  "checked_at": "2026-08-01T16:46:25.242Z",
+  "checked_at": "2026-08-01T17:01:20.130Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
     "https://y.com.sb",
-    "https://invidious.flokinet.to"
+    "https://invidious.flokinet.to",
+    "https://yt.thechangebook.org"
   ],
   "failed_instances": [
     {
@@ -179,7 +180,8 @@
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -248,7 +250,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -453,10 +455,6 @@
     {
       "instance": "https://rust.oskamp.nl",
       "status": 404
-    },
-    {
-      "instance": "https://yt.thechangebook.org",
-      "status": 400
     },
     {
       "instance": "https://app.materialio.us",
