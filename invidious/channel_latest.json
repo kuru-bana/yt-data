@@ -1,16 +1,15 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-08-02T02:18:57.711Z",
+  "checked_at": "2026-08-02T02:34:00.647Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
-    "https://y.com.sb",
-    "https://invidious.flokinet.to"
+    "https://y.com.sb"
   ],
   "failed_instances": [
     {
@@ -401,7 +400,8 @@
     },
     {
       "instance": "https://invidious.ducks.party",
-      "status": 500
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.nerdvpn.de",
@@ -431,6 +431,11 @@
     },
     {
       "instance": "https://yt.artemislena.eu",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.flokinet.to",
       "status": null,
       "error": "fetch failed"
     },
