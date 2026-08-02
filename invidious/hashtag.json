@@ -1,18 +1,16 @@
 {
   "endpoint": "hashtag/:tag",
   "sample_path": "/api/v1/hashtag/music",
-  "checked_at": "2026-08-02T09:21:22.351Z",
+  "checked_at": "2026-08-02T09:36:26.265Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 7,
-  "failed_count": 97,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://inv.nadeko.net",
     "https://inv.zzls.xyz",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
-    "https://y.com.sb",
-    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org"
   ],
   "failed_instances": [
@@ -118,7 +116,8 @@
     },
     {
       "instance": "https://inv.odyssey346.dev",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.perditum.com",
@@ -396,8 +395,7 @@
     },
     {
       "instance": "https://invidious.ducks.party",
-      "status": null,
-      "error": "timeout"
+      "status": 400
     },
     {
       "instance": "https://invidious.nerdvpn.de",
@@ -411,11 +409,16 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 400
+      "status": 429
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
+    },
+    {
+      "instance": "https://y.com.sb",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://yt.vern.cc",
@@ -427,6 +430,11 @@
     },
     {
       "instance": "https://yt.artemislena.eu",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.flokinet.to",
       "status": null,
       "error": "fetch failed"
     },
