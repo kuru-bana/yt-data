@@ -1,15 +1,16 @@
 {
   "endpoint": "trending",
   "sample_path": "/api/v1/trending",
-  "checked_at": "2026-08-02T22:04:48.645Z",
+  "checked_at": "2026-08-02T22:19:43.035Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
-    "https://y.com.sb"
+    "https://y.com.sb",
+    "https://invidious.flokinet.to"
   ],
   "failed_instances": [
     {
@@ -163,11 +164,13 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -258,8 +261,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": null,
-      "error": "fetch failed"
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -415,7 +417,7 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 500
+      "status": 429
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
@@ -433,11 +435,6 @@
       "instance": "https://yt.artemislena.eu",
       "status": null,
       "error": "fetch failed"
-    },
-    {
-      "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
