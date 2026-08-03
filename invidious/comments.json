@@ -1,19 +1,18 @@
 {
   "endpoint": "comments/:id",
   "sample_path": "/api/v1/comments/dQw4w9WgXcQ",
-  "checked_at": "2026-08-03T23:00:26.736Z",
+  "checked_at": "2026-08-03T23:15:26.248Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 7,
-  "failed_count": 97,
+  "working_count": 6,
+  "failed_count": 98,
   "working_instances": [
     "https://inv.nadeko.net",
-    "https://inv.zzls.xyz",
+    "https://invidious.tiekoetter.com",
     "https://invidious.f5.si",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
-    "https://y.com.sb",
-    "https://invidious.flokinet.to"
+    "https://y.com.sb"
   ],
   "failed_instances": [
     {
@@ -142,11 +141,17 @@
     },
     {
       "instance": "https://inv.pistasjis.net",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://inv.riverside.rocks",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://inv.zzls.xyz",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.in.projectsegfau.lt",
@@ -189,8 +194,7 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.adminforge.de",
@@ -198,14 +202,8 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.tiekoetter.com",
-      "status": null,
-      "error": "fetch failed"
-    },
-    {
       "instance": "https://invidious.private.coffee",
-      "status": null,
-      "error": "fetch failed"
+      "status": 502
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -236,7 +234,8 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -335,7 +334,8 @@
     },
     {
       "instance": "https://invidious.osi.kr",
-      "status": 436
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.rhyshl.live",
@@ -430,6 +430,11 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -458,7 +463,6 @@
   ],
   "cloudflare_instances": [
     "https://iv.duti.dev",
-    "https://inv.riverside.rocks",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.epicsite.xyz",
