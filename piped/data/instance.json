@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-03T15:02:55.337Z",
+  "checked_at": "2026-08-03T15:32:54.856Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,31 +61,26 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 7,
-      "failed_count": 5,
-      "availability": 58,
+      "working_count": 8,
+      "failed_count": 4,
+      "availability": 67,
       "working_endpoints": [
         "streams",
         "comments",
+        "search",
         "suggestions",
         "trending",
+        "channel",
         "config",
-        "sponsors",
-        "c"
+        "sponsors"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "search",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
           "endpoint": "playlists",
+          "status": 500
+        },
+        {
+          "endpoint": "c",
           "status": null,
           "error": "timeout"
         },
@@ -1375,7 +1370,8 @@
         },
         {
           "endpoint": "trending",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel",
@@ -1449,7 +1445,8 @@
         },
         {
           "endpoint": "trending",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
@@ -1485,8 +1482,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
@@ -4427,7 +4423,8 @@
         },
         {
           "endpoint": "trending",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
@@ -4463,8 +4460,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
@@ -4881,7 +4877,7 @@
         },
         {
           "endpoint": "config",
-          "status": 525
+          "status": 522
         },
         {
           "endpoint": "sponsors",
