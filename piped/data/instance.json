@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-08-06T19:32:54.054Z",
+  "checked_at": "2026-08-06T19:47:55.344Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
         "comments",
@@ -18,11 +18,15 @@
         "channel",
         "playlists",
         "config",
-        "sponsors",
         "c",
         "user"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "sponsors",
+          "status": null,
+          "error": "fetch failed"
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -143,8 +147,7 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 502
         },
         {
           "endpoint": "channel",
@@ -927,13 +930,11 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "playlists",
@@ -1337,13 +1338,11 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "playlists",
@@ -1367,8 +1366,7 @@
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         }
       ]
     },
@@ -1414,8 +1412,7 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "trending",
@@ -1423,8 +1420,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
@@ -1472,8 +1468,7 @@
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "dearrow",
@@ -4465,8 +4460,7 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "trending",
@@ -4474,8 +4468,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
@@ -4523,8 +4516,7 @@
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "dearrow",
@@ -7329,11 +7321,13 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "comments",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "search",
@@ -7373,8 +7367,7 @@
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         }
       ]
     },
