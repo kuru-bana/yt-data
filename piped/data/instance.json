@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-07T21:32:55.640Z",
+  "checked_at": "2026-08-07T21:47:55.240Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,19 +61,18 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
+      "working_count": 8,
+      "failed_count": 4,
+      "availability": 67,
       "working_endpoints": [
         "streams",
         "search",
         "suggestions",
         "trending",
         "channel",
-        "playlists",
         "config",
         "sponsors",
-        "user"
+        "c"
       ],
       "failed_endpoints": [
         {
@@ -81,7 +80,11 @@
           "status": 500
         },
         {
-          "endpoint": "c",
+          "endpoint": "playlists",
+          "status": 500
+        },
+        {
+          "endpoint": "user",
           "status": 500
         },
         {
@@ -191,12 +194,12 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 502
         },
         {
           "endpoint": "c",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
@@ -975,12 +978,12 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
@@ -1384,8 +1387,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
