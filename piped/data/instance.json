@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-07T14:32:55.835Z",
+  "checked_at": "2026-08-07T15:17:53.049Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -40,22 +40,22 @@
       "availability": 75,
       "working_endpoints": [
         "streams",
+        "comments",
         "search",
         "suggestions",
         "trending",
         "channel",
         "playlists",
         "config",
-        "sponsors",
-        "user"
+        "sponsors"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "comments",
+          "endpoint": "c",
           "status": 500
         },
         {
-          "endpoint": "c",
+          "endpoint": "user",
           "status": 500
         },
         {
@@ -141,7 +141,8 @@
         },
         {
           "endpoint": "search",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
@@ -924,7 +925,8 @@
         },
         {
           "endpoint": "search",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
@@ -1332,7 +1334,8 @@
         },
         {
           "endpoint": "search",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
@@ -1398,7 +1401,8 @@
         },
         {
           "endpoint": "search",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "search",
@@ -4434,7 +4438,8 @@
         },
         {
           "endpoint": "search",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "search",
@@ -7319,8 +7324,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "suggestions",
