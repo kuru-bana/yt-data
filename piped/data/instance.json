@@ -1,36 +1,10 @@
 {
-  "checked_at": "2026-08-08T14:02:51.546Z",
+  "checked_at": "2026-08-08T14:17:53.544Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
       "instance": "https://pipedapi.wireway.ch",
-      "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -76,6 +50,38 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
+          "status": 500
+        },
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
+      "total_endpoints": 12,
+      "working_count": 9,
+      "failed_count": 3,
+      "availability": 75,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "c",
+          "status": 500
+        },
+        {
+          "endpoint": "user",
           "status": 500
         },
         {
@@ -189,7 +195,8 @@
         },
         {
           "endpoint": "c",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
@@ -972,7 +979,8 @@
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
@@ -1380,7 +1388,8 @@
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
@@ -1474,7 +1483,8 @@
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
@@ -4451,7 +4461,8 @@
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
