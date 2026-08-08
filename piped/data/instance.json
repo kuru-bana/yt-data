@@ -1,36 +1,10 @@
 {
-  "checked_at": "2026-08-08T10:18:00.938Z",
+  "checked_at": "2026-08-08T10:32:54.753Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
       "instance": "https://pipedapi.wireway.ch",
-      "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -77,6 +51,45 @@
         {
           "endpoint": "streams",
           "status": 500
+        },
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
+      "total_endpoints": 12,
+      "working_count": 7,
+      "failed_count": 5,
+      "availability": 58,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "suggestions",
+        "trending",
+        "channel",
+        "config",
+        "sponsors"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "search",
+          "status": 500
+        },
+        {
+          "endpoint": "playlists",
+          "status": 500
+        },
+        {
+          "endpoint": "c",
+          "status": 500
+        },
+        {
+          "endpoint": "user",
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
@@ -173,7 +186,8 @@
         },
         {
           "endpoint": "channel",
-          "status": 502
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
@@ -956,7 +970,8 @@
         },
         {
           "endpoint": "channel",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
@@ -1364,7 +1379,8 @@
         },
         {
           "endpoint": "channel",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
@@ -1438,12 +1454,12 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel",
@@ -4416,12 +4432,12 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel",
@@ -4866,7 +4882,7 @@
         },
         {
           "endpoint": "config",
-          "status": 525
+          "status": 522
         },
         {
           "endpoint": "sponsors",
@@ -7287,28 +7303,23 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "dearrow",
