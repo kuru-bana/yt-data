@@ -1,10 +1,36 @@
 {
-  "checked_at": "2026-08-07T23:47:54.852Z",
+  "checked_at": "2026-08-08T00:02:50.845Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
       "instance": "https://pipedapi.wireway.ch",
+      "total_endpoints": 12,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors",
+        "c",
+        "user"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -50,38 +76,6 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": 500
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://api.piped.private.coffee",
-      "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "c",
-          "status": 500
-        },
-        {
-          "endpoint": "user",
           "status": 500
         },
         {
@@ -1428,8 +1422,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "suggestions",
@@ -4406,8 +4399,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "suggestions",
@@ -5413,8 +5405,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "timeout"
+          "status": 403
         },
         {
           "endpoint": "c",
@@ -5422,13 +5413,11 @@
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "timeout"
+          "status": 403
         }
       ]
     },
@@ -6814,7 +6803,8 @@
         },
         {
           "endpoint": "search",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
