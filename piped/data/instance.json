@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-11T09:47:54.451Z",
+  "checked_at": "2026-08-11T11:02:56.541Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,17 +61,18 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 7,
-      "failed_count": 5,
-      "availability": 58,
+      "working_count": 8,
+      "failed_count": 4,
+      "availability": 67,
       "working_endpoints": [
         "streams",
         "search",
         "suggestions",
         "trending",
+        "playlists",
         "config",
         "sponsors",
-        "c"
+        "user"
       ],
       "failed_endpoints": [
         {
@@ -83,12 +84,9 @@
           "status": 500
         },
         {
-          "endpoint": "playlists",
-          "status": 500
-        },
-        {
-          "endpoint": "user",
-          "status": 500
+          "endpoint": "c",
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
@@ -1360,7 +1358,8 @@
         },
         {
           "endpoint": "comments",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "search",
@@ -1376,8 +1375,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "playlists",
@@ -1423,7 +1421,8 @@
         },
         {
           "endpoint": "comments",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "comments",
@@ -1455,8 +1454,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
@@ -1476,8 +1474,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "sponsors",
@@ -1523,12 +1520,12 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "comments",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "search",
@@ -1544,8 +1541,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "playlists",
@@ -4392,7 +4388,8 @@
         },
         {
           "endpoint": "comments",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "comments",
@@ -4424,8 +4421,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "channel",
@@ -4445,8 +4441,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "sponsors",
@@ -5073,19 +5068,23 @@
         },
         {
           "endpoint": "sponsors",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
