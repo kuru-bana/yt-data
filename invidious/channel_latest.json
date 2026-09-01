@@ -1,14 +1,15 @@
 {
   "endpoint": "channels/:id/latest",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/latest",
-  "checked_at": "2026-09-01T22:18:42.036Z",
+  "checked_at": "2026-09-01T22:33:40.423Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ritoge.com",
+    "https://y.com.sb",
     "https://invidious.flokinet.to",
     "https://inv.kamuridesu.com"
   ],
@@ -71,13 +72,11 @@
     },
     {
       "instance": "https://inv.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv1.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv2.nadeko.net",
@@ -232,7 +231,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -254,7 +253,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -411,7 +411,7 @@
     },
     {
       "instance": "https://invidious.darkness.services",
-      "status": 429
+      "status": 500
     },
     {
       "instance": "https://invidious.schenkel.eti.br",
@@ -420,11 +420,6 @@
     {
       "instance": "https://yt.omada.cafe",
       "status": 403
-    },
-    {
-      "instance": "https://y.com.sb",
-      "status": null,
-      "error": "fetch failed"
     },
     {
       "instance": "https://yt.vern.cc",
@@ -465,6 +460,8 @@
   "cloudflare_instances": [
     "https://yewtu.be",
     "https://iv.duti.dev",
+    "https://inv.nadeko.net",
+    "https://inv1.nadeko.net",
     "https://inv2.nadeko.net",
     "https://inv3.nadeko.net",
     "https://inv4.nadeko.net",
