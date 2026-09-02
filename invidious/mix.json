@@ -1,14 +1,13 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-09-02T10:49:12.425Z",
+  "checked_at": "2026-09-02T11:04:08.025Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 2,
-  "failed_count": 102,
+  "working_count": 1,
+  "failed_count": 103,
   "working_instances": [
-    "https://iv.catgirl.cloud",
-    "https://invidious.ritoge.com"
+    "https://iv.catgirl.cloud"
   ],
   "failed_instances": [
     {
@@ -228,7 +227,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -250,7 +249,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -411,6 +411,10 @@
     {
       "instance": "https://invidious.schenkel.eti.br",
       "status": 403
+    },
+    {
+      "instance": "https://invidious.ritoge.com",
+      "status": 500
     },
     {
       "instance": "https://yt.omada.cafe",
