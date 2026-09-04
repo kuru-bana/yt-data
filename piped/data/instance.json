@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T21:18:05.340Z",
+  "checked_at": "2026-09-04T22:03:06.034Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -87,29 +87,37 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
+      "working_count": 7,
+      "failed_count": 5,
+      "availability": 58,
       "working_endpoints": [
         "streams",
         "comments",
         "suggestions",
         "trending",
-        "channel",
-        "playlists",
         "config",
         "sponsors",
-        "c"
+        "user"
       ],
       "failed_endpoints": [
         {
           "endpoint": "search",
+          "status": 500
+        },
+        {
+          "endpoint": "channel",
           "status": null,
           "error": "timeout"
         },
         {
-          "endpoint": "user",
-          "status": 500
+          "endpoint": "playlists",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
+          "endpoint": "c",
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
@@ -1009,8 +1017,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "sponsors",
@@ -1418,8 +1425,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "sponsors",
@@ -1505,8 +1511,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "config",
@@ -1585,8 +1590,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "sponsors",
@@ -4473,8 +4477,7 @@
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "config",
