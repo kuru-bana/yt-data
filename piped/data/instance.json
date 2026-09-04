@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-04T04:48:05.532Z",
+  "checked_at": "2026-09-04T05:18:05.038Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -37,7 +37,6 @@
       "availability": 83,
       "working_endpoints": [
         "streams",
-        "comments",
         "search",
         "suggestions",
         "trending",
@@ -45,11 +44,12 @@
         "playlists",
         "config",
         "sponsors",
-        "c"
+        "c",
+        "user"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "user",
+          "endpoint": "comments",
           "status": 500
         },
         {
@@ -1509,7 +1509,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -1544,8 +1545,7 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "playlists",
@@ -4476,7 +4476,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
