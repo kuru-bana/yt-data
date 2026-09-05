@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T09:03:05.337Z",
+  "checked_at": "2026-09-05T09:18:08.133Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -30,11 +30,11 @@
       ]
     },
     {
-      "instance": "https://pipedapi.ducks.party",
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
         "comments",
@@ -42,13 +42,16 @@
         "suggestions",
         "trending",
         "channel",
-        "playlists",
         "config",
         "sponsors",
         "c",
         "user"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "playlists",
+          "status": 500
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -85,23 +88,42 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
+      "working_count": 3,
+      "failed_count": 9,
+      "availability": 25,
       "working_endpoints": [
         "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
         "config",
-        "sponsors",
-        "user"
+        "sponsors"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "comments",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "search",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "suggestions",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "trending",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "channel",
+          "status": null,
+          "error": "timeout"
+        },
         {
           "endpoint": "playlists",
           "status": null,
@@ -113,8 +135,14 @@
           "error": "timeout"
         },
         {
+          "endpoint": "user",
+          "status": null,
+          "error": "timeout"
+        },
+        {
           "endpoint": "dearrow",
-          "status": 400
+          "status": null,
+          "error": "timeout"
         }
       ]
     },
@@ -1026,7 +1054,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -1434,7 +1463,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -1536,7 +1566,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
@@ -1599,7 +1630,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -4502,7 +4534,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
@@ -5104,18 +5137,15 @@
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         }
       ]
     },
