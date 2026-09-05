@@ -1,36 +1,10 @@
 {
-  "checked_at": "2026-09-05T03:18:05.337Z",
+  "checked_at": "2026-09-05T03:33:06.530Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
       "instance": "https://pipedapi.wireway.ch",
-      "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -107,6 +81,41 @@
         {
           "endpoint": "dearrow",
           "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://pipedapi.ducks.party",
+      "total_endpoints": 12,
+      "working_count": 9,
+      "failed_count": 3,
+      "availability": 75,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "c",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "user",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "dearrow",
+          "status": null,
+          "error": "timeout"
         }
       ]
     },
@@ -998,8 +1007,7 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "config",
@@ -1407,8 +1415,7 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "config",
@@ -1490,8 +1497,7 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "playlists",
@@ -1562,8 +1568,7 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "trending",
@@ -1575,13 +1580,11 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "sponsors",
@@ -4460,8 +4463,7 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "playlists",
@@ -5107,13 +5109,11 @@
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         }
       ]
     },
