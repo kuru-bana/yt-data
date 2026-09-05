@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T20:03:07.039Z",
+  "checked_at": "2026-09-05T20:48:07.338Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -66,24 +66,24 @@
       "availability": 75,
       "working_endpoints": [
         "streams",
+        "comments",
         "search",
         "suggestions",
         "trending",
         "channel",
         "config",
         "sponsors",
-        "c",
-        "user"
+        "c"
       ],
       "failed_endpoints": [
-        {
-          "endpoint": "comments",
-          "status": 500
-        },
         {
           "endpoint": "playlists",
           "status": null,
           "error": "timeout"
+        },
+        {
+          "endpoint": "user",
+          "status": 500
         },
         {
           "endpoint": "dearrow",
@@ -116,13 +116,11 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "channel",
@@ -135,7 +133,8 @@
         },
         {
           "endpoint": "sponsors",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "c",
@@ -148,7 +147,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         }
       ]
     },
@@ -1542,7 +1542,8 @@
         },
         {
           "endpoint": "config",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "sponsors",
@@ -4519,7 +4520,8 @@
         },
         {
           "endpoint": "config",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "sponsors",
