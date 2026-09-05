@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T18:03:05.336Z",
+  "checked_at": "2026-09-05T18:18:06.134Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -23,6 +23,35 @@
         "user"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
+      "total_endpoints": 12,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors",
+        "user"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "c",
+          "status": 500
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -59,38 +88,6 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
-      "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "config",
-        "sponsors",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "channel",
-          "status": 500
-        },
-        {
-          "endpoint": "playlists",
-          "status": 500
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
       "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
       "working_count": 1,
@@ -110,16 +107,17 @@
         },
         {
           "endpoint": "search",
+          "status": 502
+        },
+        {
+          "endpoint": "suggestions",
           "status": null,
           "error": "timeout"
         },
         {
-          "endpoint": "suggestions",
-          "status": 502
-        },
-        {
           "endpoint": "trending",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "channel",
@@ -139,7 +137,8 @@
         },
         {
           "endpoint": "user",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
