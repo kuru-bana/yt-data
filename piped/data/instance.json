@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T21:03:07.035Z",
+  "checked_at": "2026-09-05T21:33:07.532Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,22 +61,30 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 8,
-      "failed_count": 4,
-      "availability": 67,
+      "working_count": 6,
+      "failed_count": 6,
+      "availability": 50,
       "working_endpoints": [
-        "streams",
-        "search",
+        "comments",
         "suggestions",
         "trending",
-        "channel",
         "config",
         "sponsors",
-        "c"
+        "user"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "comments",
+          "endpoint": "streams",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
+          "endpoint": "search",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "channel",
           "status": 500
         },
         {
@@ -84,9 +92,8 @@
           "status": 500
         },
         {
-          "endpoint": "user",
-          "status": null,
-          "error": "timeout"
+          "endpoint": "c",
+          "status": 500
         },
         {
           "endpoint": "dearrow",
@@ -111,8 +118,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "search",
@@ -121,12 +127,12 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "channel",
@@ -139,7 +145,8 @@
         },
         {
           "endpoint": "sponsors",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "c",
@@ -152,7 +159,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         }
       ]
     },
@@ -1056,8 +1064,7 @@
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "user",
@@ -1465,8 +1472,7 @@
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "user",
@@ -1560,8 +1566,7 @@
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
@@ -1632,8 +1637,7 @@
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "user",
@@ -4539,8 +4543,7 @@
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "c",
@@ -5162,11 +5165,13 @@
         },
         {
           "endpoint": "user",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
