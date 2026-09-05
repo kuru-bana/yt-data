@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T19:18:06.841Z",
+  "checked_at": "2026-09-05T20:03:07.039Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,17 +61,18 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 8,
-      "failed_count": 4,
-      "availability": 67,
+      "working_count": 9,
+      "failed_count": 3,
+      "availability": 75,
       "working_endpoints": [
         "streams",
+        "search",
         "suggestions",
         "trending",
         "channel",
-        "playlists",
         "config",
         "sponsors",
+        "c",
         "user"
       ],
       "failed_endpoints": [
@@ -80,13 +81,9 @@
           "status": 500
         },
         {
-          "endpoint": "search",
+          "endpoint": "playlists",
           "status": null,
           "error": "timeout"
-        },
-        {
-          "endpoint": "c",
-          "status": 500
         },
         {
           "endpoint": "dearrow",
@@ -119,7 +116,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "trending",
@@ -128,7 +126,8 @@
         },
         {
           "endpoint": "channel",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "playlists",
@@ -136,8 +135,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "c",
