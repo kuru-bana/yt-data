@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T21:33:07.532Z",
+  "checked_at": "2026-09-05T21:48:07.435Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,28 +61,20 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 6,
-      "failed_count": 6,
-      "availability": 50,
+      "working_count": 8,
+      "failed_count": 4,
+      "availability": 67,
       "working_endpoints": [
+        "streams",
         "comments",
+        "search",
         "suggestions",
         "trending",
         "config",
         "sponsors",
-        "user"
+        "c"
       ],
       "failed_endpoints": [
-        {
-          "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "endpoint": "search",
-          "status": null,
-          "error": "timeout"
-        },
         {
           "endpoint": "channel",
           "status": 500
@@ -92,7 +84,7 @@
           "status": 500
         },
         {
-          "endpoint": "c",
+          "endpoint": "user",
           "status": 500
         },
         {
@@ -132,21 +124,21 @@
         },
         {
           "endpoint": "trending",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "channel",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         },
         {
           "endpoint": "c",
@@ -155,12 +147,12 @@
         },
         {
           "endpoint": "user",
-          "status": 502
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "timeout"
+          "status": 502
         }
       ]
     },
@@ -5165,13 +5157,11 @@
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         }
       ]
     },
