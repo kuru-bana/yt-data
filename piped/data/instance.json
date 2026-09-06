@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T19:33:05.434Z",
+  "checked_at": "2026-09-06T20:18:06.135Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -87,23 +87,26 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
+      "working_count": 8,
+      "failed_count": 4,
+      "availability": 67,
       "working_endpoints": [
         "streams",
         "comments",
+        "search",
         "suggestions",
         "trending",
-        "channel",
-        "playlists",
         "config",
         "sponsors",
         "c"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "search",
+          "endpoint": "channel",
+          "status": 500
+        },
+        {
+          "endpoint": "playlists",
           "status": 500
         },
         {
@@ -984,8 +987,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "search",
@@ -993,8 +995,7 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "trending",
@@ -1394,8 +1395,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "search",
@@ -1403,8 +1403,7 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "trending",
@@ -1458,8 +1457,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "comments",
@@ -1475,8 +1473,7 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "suggestions",
@@ -1563,8 +1560,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "search",
@@ -1572,8 +1568,7 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "trending",
@@ -4439,8 +4434,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "comments",
@@ -4456,8 +4450,7 @@
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "suggestions",
@@ -7271,7 +7264,8 @@
         },
         {
           "endpoint": "comments",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "search",
