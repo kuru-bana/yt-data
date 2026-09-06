@@ -1,14 +1,12 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-09-06T09:19:06.626Z",
+  "checked_at": "2026-09-06T09:34:10.544Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
-  "working_instances": [
-    "https://invidious.ducks.party"
-  ],
+  "working_count": 0,
+  "failed_count": 104,
+  "working_instances": [],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
@@ -249,11 +247,13 @@
     },
     {
       "instance": "https://invidious.site",
-      "status": 200
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -394,6 +394,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.ducks.party",
+      "status": 500
+    },
+    {
       "instance": "https://invidious.nerdvpn.de",
       "status": null,
       "error": "fetch failed"
@@ -487,7 +491,6 @@
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.io.lol",
-    "https://invidious.site",
     "https://invidious.domain.glass",
     "https://invidious.epicsite.xyz",
     "https://invidious.f5.si",
