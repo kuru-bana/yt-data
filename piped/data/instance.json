@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-05T23:48:05.634Z",
+  "checked_at": "2026-09-06T00:03:06.037Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -87,30 +87,34 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 8,
-      "failed_count": 4,
-      "availability": 67,
+      "working_count": 7,
+      "failed_count": 5,
+      "availability": 58,
       "working_endpoints": [
         "streams",
-        "comments",
         "suggestions",
         "trending",
+        "channel",
+        "playlists",
         "config",
-        "sponsors",
-        "c",
-        "user"
+        "sponsors"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "comments",
+          "status": null,
+          "error": "timeout"
+        },
         {
           "endpoint": "search",
           "status": 500
         },
         {
-          "endpoint": "channel",
+          "endpoint": "c",
           "status": 500
         },
         {
-          "endpoint": "playlists",
+          "endpoint": "user",
           "status": 500
         },
         {
@@ -1521,7 +1525,8 @@
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
@@ -1592,7 +1597,8 @@
         },
         {
           "endpoint": "c",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
@@ -4498,7 +4504,8 @@
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
@@ -6810,7 +6817,8 @@
         },
         {
           "endpoint": "trending",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel",
@@ -7292,7 +7300,8 @@
         },
         {
           "endpoint": "sponsors",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "c",
