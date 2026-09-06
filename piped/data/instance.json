@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T08:18:10.239Z",
+  "checked_at": "2026-09-06T08:48:08.133Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -58,9 +58,9 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
         "comments",
@@ -71,10 +71,13 @@
         "playlists",
         "config",
         "sponsors",
-        "c",
-        "user"
+        "c"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "user",
+          "status": 500
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -982,8 +985,7 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "suggestions",
@@ -1543,12 +1545,12 @@
       "working_count": 0,
       "failed_count": 12,
       "availability": 0,
+      "cloudflare_blocked": true,
       "working_endpoints": [],
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "comments",
@@ -7277,17 +7279,15 @@
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "playlists",
-          "status": 502
+          "status": 404
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "sponsors",
@@ -7296,17 +7296,15 @@
         },
         {
           "endpoint": "c",
-          "status": 502
+          "status": 404
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         }
       ]
     },
