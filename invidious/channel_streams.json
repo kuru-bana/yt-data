@@ -1,16 +1,15 @@
 {
   "endpoint": "channels/:id/streams",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/streams",
-  "checked_at": "2026-09-06T20:47:47.724Z",
+  "checked_at": "2026-09-06T21:02:55.222Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 5,
-  "failed_count": 99,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
-    "https://invidious.flokinet.to",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
@@ -253,7 +252,8 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -432,6 +432,10 @@
       "instance": "https://yt.artemislena.eu",
       "status": null,
       "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.flokinet.to",
+      "status": 502
     },
     {
       "instance": "https://lekker.gay",
