@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T08:48:08.133Z",
+  "checked_at": "2026-09-06T09:18:07.230Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -58,9 +58,9 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 10,
-      "failed_count": 2,
-      "availability": 83,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
       "working_endpoints": [
         "streams",
         "comments",
@@ -71,13 +71,10 @@
         "playlists",
         "config",
         "sponsors",
-        "c"
+        "c",
+        "user"
       ],
       "failed_endpoints": [
-        {
-          "endpoint": "user",
-          "status": 500
-        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -1397,7 +1394,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
@@ -1467,7 +1465,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
@@ -1562,7 +1561,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
@@ -4444,7 +4444,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
@@ -7254,8 +7255,7 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "comments",
@@ -7264,18 +7264,15 @@
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "channel",
@@ -7296,11 +7293,13 @@
         },
         {
           "endpoint": "c",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "user",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
