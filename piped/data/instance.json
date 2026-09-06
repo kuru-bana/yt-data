@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T16:03:05.437Z",
+  "checked_at": "2026-09-06T17:18:05.235Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -58,9 +58,9 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 8,
-      "failed_count": 4,
-      "availability": 67,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
         "comments",
@@ -68,22 +68,15 @@
         "suggestions",
         "trending",
         "channel",
+        "playlists",
         "config",
-        "sponsors"
+        "sponsors",
+        "user"
       ],
       "failed_endpoints": [
         {
-          "endpoint": "playlists",
-          "status": 500
-        },
-        {
           "endpoint": "c",
           "status": 500
-        },
-        {
-          "endpoint": "user",
-          "status": null,
-          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
@@ -94,10 +87,13 @@
     {
       "instance": "https://pipedapi.winscloud.net",
       "total_endpoints": 12,
-      "working_count": 7,
-      "failed_count": 5,
-      "availability": 58,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
+        "comments",
+        "search",
+        "suggestions",
         "trending",
         "channel",
         "playlists",
@@ -109,23 +105,7 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 500
         },
         {
           "endpoint": "dearrow",
@@ -1041,8 +1021,7 @@
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         }
       ]
     },
