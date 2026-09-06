@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-06T21:03:09.335Z",
+  "checked_at": "2026-09-06T21:18:09.639Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -56,6 +56,35 @@
       ]
     },
     {
+      "instance": "https://api.piped.private.coffee",
+      "total_endpoints": 12,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors",
+        "c",
+        "user"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "search",
+          "status": 500
+        },
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
       "instance": "https://pipedapi.winscloud.net",
       "total_endpoints": 12,
       "working_count": 10,
@@ -76,39 +105,6 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": 500
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://api.piped.private.coffee",
-      "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "suggestions",
-        "trending",
-        "channel",
-        "config",
-        "sponsors",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "search",
-          "status": null,
-          "error": "timeout"
-        },
-        {
-          "endpoint": "playlists",
           "status": 500
         },
         {
@@ -7263,12 +7259,12 @@
         },
         {
           "endpoint": "comments",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "suggestions",
@@ -7276,7 +7272,8 @@
         },
         {
           "endpoint": "trending",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "channel",
