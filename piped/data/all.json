@@ -1,18 +1,17 @@
 {
-  "checked_at": "2026-09-06T01:03:05.334Z",
+  "checked_at": "2026-09-06T01:18:05.840Z",
   "endpoints": {
     "streams": {
       "endpoint": "streams/:id",
       "sample_path": "/streams/dQw4w9WgXcQ",
-      "checked_at": "2026-09-06T01:00:12.733Z",
+      "checked_at": "2026-09-06T01:15:12.828Z",
       "cache_ttl_seconds": 600,
       "total": 131,
-      "working_count": 3,
-      "failed_count": 128,
+      "working_count": 2,
+      "failed_count": 129,
       "working_instances": [
         "https://pipedapi.wireway.ch",
-        "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee"
+        "https://pipedapi.ducks.party"
       ],
       "failed_instances": [
         {
@@ -468,6 +467,10 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://api.piped.private.coffee",
+          "status": 500
+        },
+        {
           "instance": "https://schaunapi.ehwurscht.at",
           "status": 404
         },
@@ -516,7 +519,8 @@
         },
         {
           "instance": "https://pipedapi.woz.blue",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "instance": "https://pipedapi.invidious.site",
@@ -645,7 +649,7 @@
     "comments": {
       "endpoint": "comments/:id",
       "sample_path": "/comments/dQw4w9WgXcQ",
-      "checked_at": "2026-09-06T01:00:28.133Z",
+      "checked_at": "2026-09-06T01:15:28.230Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -960,8 +964,7 @@
         },
         {
           "instance": "https://piped.projectsegfau.lt",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "instance": "https://pipedapi.in.ni4.jp",
@@ -1283,7 +1286,7 @@
     "search": {
       "endpoint": "search",
       "sample_path": "/search?q=test&filter=all",
-      "checked_at": "2026-09-06T01:00:43.432Z",
+      "checked_at": "2026-09-06T01:15:43.632Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -1920,7 +1923,7 @@
     "suggestions": {
       "endpoint": "suggestions",
       "sample_path": "/suggestions?query=test",
-      "checked_at": "2026-09-06T01:00:58.932Z",
+      "checked_at": "2026-09-06T01:15:59.127Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -2557,7 +2560,7 @@
     "trending": {
       "endpoint": "trending",
       "sample_path": "/trending?region=US",
-      "checked_at": "2026-09-06T01:01:14.335Z",
+      "checked_at": "2026-09-06T01:16:14.530Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -3194,15 +3197,14 @@
     "channel": {
       "endpoint": "channel/:id",
       "sample_path": "/channel/UCVhQ2NnY5Rskt6UjCUkJ_DA",
-      "checked_at": "2026-09-06T01:01:29.829Z",
+      "checked_at": "2026-09-06T01:16:30.029Z",
       "cache_ttl_seconds": 600,
       "total": 131,
-      "working_count": 4,
-      "failed_count": 127,
+      "working_count": 3,
+      "failed_count": 128,
       "working_instances": [
         "https://pipedapi.wireway.ch",
         "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee",
         "https://pipedapi.winscloud.net"
       ],
       "failed_instances": [
@@ -3659,6 +3661,10 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://api.piped.private.coffee",
+          "status": 500
+        },
+        {
           "instance": "https://schaunapi.ehwurscht.at",
           "status": 404
         },
@@ -3831,7 +3837,7 @@
     "playlists": {
       "endpoint": "playlists/:id",
       "sample_path": "/playlists/PLBCF2DAC6FFB574DE",
-      "checked_at": "2026-09-06T01:01:45.234Z",
+      "checked_at": "2026-09-06T01:16:45.429Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -3905,7 +3911,8 @@
         },
         {
           "instance": "https://pipedapi.eu.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://pipedapi.ca.projectsegfau.lt",
@@ -3934,15 +3941,18 @@
         },
         {
           "instance": "https://api.piped.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://piped.projectsegfau.lt",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://pipedapi.adminforge.de",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "instance": "https://pipedapi.garudalinux.org",
@@ -4468,7 +4478,7 @@
     "config": {
       "endpoint": "config",
       "sample_path": "/config",
-      "checked_at": "2026-09-06T01:02:00.530Z",
+      "checked_at": "2026-09-06T01:17:00.928Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -5105,7 +5115,7 @@
     "sponsors": {
       "endpoint": "sponsors/:id",
       "sample_path": "/sponsors/dQw4w9WgXcQ",
-      "checked_at": "2026-09-06T01:02:15.930Z",
+      "checked_at": "2026-09-06T01:17:16.330Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 4,
@@ -5742,15 +5752,14 @@
     "c": {
       "endpoint": "c/:name",
       "sample_path": "/c/YouTube",
-      "checked_at": "2026-09-06T01:02:31.430Z",
+      "checked_at": "2026-09-06T01:17:32.031Z",
       "cache_ttl_seconds": 600,
       "total": 131,
-      "working_count": 4,
-      "failed_count": 127,
+      "working_count": 3,
+      "failed_count": 128,
       "working_instances": [
         "https://pipedapi.wireway.ch",
         "https://pipedapi.ducks.party",
-        "https://api.piped.private.coffee",
         "https://pipedapi.winscloud.net"
       ],
       "failed_instances": [
@@ -6207,6 +6216,11 @@
           "error": "fetch failed"
         },
         {
+          "instance": "https://api.piped.private.coffee",
+          "status": null,
+          "error": "timeout"
+        },
+        {
           "instance": "https://schaunapi.ehwurscht.at",
           "status": 404
         },
@@ -6379,7 +6393,7 @@
     "user": {
       "endpoint": "user/:name",
       "sample_path": "/user/YouTube",
-      "checked_at": "2026-09-06T01:02:46.837Z",
+      "checked_at": "2026-09-06T01:17:47.431Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 3,
@@ -7019,7 +7033,7 @@
     "dearrow": {
       "endpoint": "dearrow",
       "sample_path": "/dearrow?videoId=dQw4w9WgXcQ",
-      "checked_at": "2026-09-06T01:03:02.331Z",
+      "checked_at": "2026-09-06T01:18:02.836Z",
       "cache_ttl_seconds": 600,
       "total": 131,
       "working_count": 0,
