@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-07T13:03:06.138Z",
+  "checked_at": "2026-09-07T14:48:05.236Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
-      "instance": "https://pipedapi.wireway.ch",
+      "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "instance": "https://pipedapi.ducks.party",
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -85,24 +85,44 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.wireway.ch",
       "total_endpoints": 12,
-      "working_count": 8,
-      "failed_count": 4,
-      "availability": 67,
+      "working_count": 2,
+      "failed_count": 10,
+      "availability": 17,
       "working_endpoints": [
         "streams",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors"
+        "config"
       ],
       "failed_endpoints": [
         {
           "endpoint": "comments",
+          "status": 500
+        },
+        {
+          "endpoint": "search",
+          "status": 500
+        },
+        {
+          "endpoint": "suggestions",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "trending",
+          "status": 500
+        },
+        {
+          "endpoint": "channel",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "playlists",
+          "status": 500
+        },
+        {
+          "endpoint": "sponsors",
           "status": null,
           "error": "timeout"
         },
@@ -116,7 +136,8 @@
         },
         {
           "endpoint": "dearrow",
-          "status": 400
+          "status": null,
+          "error": "timeout"
         }
       ]
     },
@@ -2172,7 +2193,7 @@
         },
         {
           "endpoint": "search",
-          "status": 200
+          "status": 500
         },
         {
           "endpoint": "suggestions",
@@ -2196,7 +2217,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": 200
+          "status": 500
         },
         {
           "endpoint": "c",
@@ -2204,7 +2225,7 @@
         },
         {
           "endpoint": "user",
-          "status": 200
+          "status": 500
         },
         {
           "endpoint": "dearrow",
@@ -7744,8 +7765,7 @@
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "channel",
