@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-07T04:18:05.432Z",
+  "checked_at": "2026-09-07T04:48:05.331Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -58,12 +58,11 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
-        "comments",
         "search",
         "suggestions",
         "trending",
@@ -75,6 +74,10 @@
         "user"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "comments",
+          "status": 500
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -998,7 +1001,8 @@
         },
         {
           "endpoint": "playlists",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "config",
@@ -1406,7 +1410,8 @@
         },
         {
           "endpoint": "playlists",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "config",
@@ -1488,7 +1493,8 @@
         },
         {
           "endpoint": "playlists",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
@@ -1571,7 +1577,8 @@
         },
         {
           "endpoint": "playlists",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "config",
@@ -1591,8 +1598,7 @@
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         }
       ]
     },
@@ -4466,7 +4472,8 @@
         },
         {
           "endpoint": "playlists",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
