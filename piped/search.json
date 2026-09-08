@@ -1,14 +1,15 @@
 {
   "endpoint": "search",
   "sample_path": "/search?q=test&filter=all",
-  "checked_at": "2026-09-08T16:00:43.929Z",
+  "checked_at": "2026-09-08T16:15:43.469Z",
   "cache_ttl_seconds": 600,
   "total": 131,
-  "working_count": 2,
-  "failed_count": 129,
+  "working_count": 3,
+  "failed_count": 128,
   "working_instances": [
     "https://pipedapi.wireway.ch",
-    "https://pipedapi.ducks.party"
+    "https://pipedapi.ducks.party",
+    "https://pipedapi.winscloud.net"
   ],
   "failed_instances": [
     {
@@ -106,7 +107,8 @@
     },
     {
       "instance": "https://piped.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://pipedapi.adminforge.de",
@@ -465,8 +467,7 @@
     },
     {
       "instance": "https://api.piped.private.coffee",
-      "status": null,
-      "error": "timeout"
+      "status": 500
     },
     {
       "instance": "https://schaunapi.ehwurscht.at",
@@ -555,11 +556,6 @@
     },
     {
       "instance": "https://pipedapi.owo.solutions",
-      "status": null,
-      "error": "fetch failed"
-    },
-    {
-      "instance": "https://pipedapi.winscloud.net",
       "status": null,
       "error": "fetch failed"
     },
