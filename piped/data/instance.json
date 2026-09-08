@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T20:33:05.438Z",
+  "checked_at": "2026-09-08T21:18:06.031Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -92,26 +92,28 @@
       "availability": 67,
       "working_endpoints": [
         "streams",
-        "search",
         "suggestions",
         "trending",
         "channel",
+        "playlists",
         "config",
         "sponsors",
-        "c"
+        "user"
       ],
       "failed_endpoints": [
         {
           "endpoint": "comments",
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "search",
           "status": 500
         },
         {
-          "endpoint": "playlists",
-          "status": 500
-        },
-        {
-          "endpoint": "user",
-          "status": 500
+          "endpoint": "c",
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
