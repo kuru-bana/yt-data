@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T18:48:05.339Z",
+  "checked_at": "2026-09-08T20:03:06.336Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -87,12 +87,11 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 7,
-      "failed_count": 5,
-      "availability": 58,
+      "working_count": 6,
+      "failed_count": 6,
+      "availability": 50,
       "working_endpoints": [
         "streams",
-        "search",
         "suggestions",
         "trending",
         "config",
@@ -102,12 +101,17 @@
       "failed_endpoints": [
         {
           "endpoint": "comments",
-          "status": 500
+          "status": null,
+          "error": "timeout"
+        },
+        {
+          "endpoint": "search",
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 500
         },
         {
           "endpoint": "playlists",
@@ -115,7 +119,8 @@
         },
         {
           "endpoint": "user",
-          "status": 500
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
@@ -7671,63 +7676,51 @@
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "search",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "suggestions",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "trending",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "channel",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "config",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 503
         }
       ]
     },
