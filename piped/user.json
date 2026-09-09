@@ -1,13 +1,12 @@
 {
   "endpoint": "user/:name",
   "sample_path": "/user/YouTube",
-  "checked_at": "2026-09-09T19:47:46.533Z",
+  "checked_at": "2026-09-09T20:02:46.934Z",
   "cache_ttl_seconds": 600,
   "total": 131,
-  "working_count": 4,
-  "failed_count": 127,
+  "working_count": 3,
+  "failed_count": 128,
   "working_instances": [
-    "https://pipedapi.wireway.ch",
     "https://pipedapi.ducks.party",
     "https://api.piped.private.coffee",
     "https://pipedapi.winscloud.net"
@@ -112,7 +111,8 @@
     },
     {
       "instance": "https://pipedapi.adminforge.de",
-      "status": 404
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://pipedapi.garudalinux.org",
@@ -154,8 +154,12 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://pipedapi.wireway.ch",
+      "status": 418
+    },
+    {
       "instance": "https://piped.wireway.ch",
-      "status": 200
+      "status": 401
     },
     {
       "instance": "https://pipedapi.leptons.xyz",
