@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T09:33:06.134Z",
+  "checked_at": "2026-09-10T10:03:05.437Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
-      "instance": "https://pipedapi.ducks.party",
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -30,11 +30,11 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
         "comments",
@@ -45,10 +45,14 @@
         "playlists",
         "config",
         "sponsors",
-        "c",
-        "user"
+        "c"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "user",
+          "status": null,
+          "error": "fetch failed"
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -952,8 +956,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "search",
@@ -1361,8 +1364,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "search",
@@ -1424,8 +1426,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "comments",
@@ -1528,8 +1529,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 404
         },
         {
           "endpoint": "search",
@@ -1557,19 +1557,23 @@
         },
         {
           "endpoint": "sponsors",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "c",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "user",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
-          "status": 404
+          "status": null,
+          "error": "timeout"
         }
       ]
     },
@@ -4460,8 +4464,7 @@
         },
         {
           "endpoint": "comments",
-          "status": null,
-          "error": "fetch failed"
+          "status": 200
         },
         {
           "endpoint": "comments",
@@ -7778,8 +7781,7 @@
         },
         {
           "endpoint": "playlists",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "config",
@@ -7787,8 +7789,7 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "c",
