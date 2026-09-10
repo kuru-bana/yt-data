@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-10T10:03:05.437Z",
+  "checked_at": "2026-09-10T10:18:05.239Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -30,11 +30,11 @@
       ]
     },
     {
-      "instance": "https://pipedapi.ducks.party",
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 10,
-      "failed_count": 2,
-      "availability": 83,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
       "working_endpoints": [
         "streams",
         "comments",
@@ -45,14 +45,10 @@
         "playlists",
         "config",
         "sponsors",
-        "c"
+        "c",
+        "user"
       ],
       "failed_endpoints": [
-        {
-          "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
-        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -980,7 +976,8 @@
         },
         {
           "endpoint": "config",
-          "status": 200
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "sponsors",
@@ -1557,23 +1554,19 @@
         },
         {
           "endpoint": "sponsors",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "c",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "user",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "timeout"
+          "status": 404
         }
       ]
     },
