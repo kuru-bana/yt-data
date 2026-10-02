@@ -1,16 +1,17 @@
 {
   "endpoint": "videos/:id",
   "sample_path": "/api/v1/videos/dQw4w9WgXcQ",
-  "checked_at": "2026-10-02T02:00:12.427Z",
+  "checked_at": "2026-10-02T02:15:12.434Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
-    "https://invidious.ritoge.com"
+    "https://invidious.ritoge.com",
+    "https://yt.omada.cafe"
   ],
   "failed_instances": [
     {
@@ -147,7 +148,8 @@
     },
     {
       "instance": "https://inv.zzls.xyz",
-      "status": 403
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.in.projectsegfau.lt",
@@ -192,13 +194,11 @@
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.private.coffee",
@@ -232,7 +232,7 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 401
+      "status": 429
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -254,7 +254,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": 401
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -410,11 +410,6 @@
       "status": 403
     },
     {
-      "instance": "https://yt.omada.cafe",
-      "status": null,
-      "error": "timeout"
-    },
-    {
       "instance": "https://y.com.sb",
       "status": null,
       "error": "fetch failed"
@@ -425,8 +420,7 @@
     },
     {
       "instance": "https://invidious.protokolla.fi",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://yt.artemislena.eu",
@@ -479,7 +473,7 @@
     "https://inv8.nadeko.net",
     "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
-    "https://inv.zzls.xyz",
+    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.io.lol",
