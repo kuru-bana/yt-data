@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-03T14:33:05.365Z",
+  "checked_at": "2026-10-03T15:03:05.265Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -40,8 +40,8 @@
         "comments",
         "search",
         "suggestions",
+        "trending",
         "channel",
-        "playlists",
         "config",
         "sponsors",
         "c",
@@ -49,7 +49,7 @@
       ],
       "failed_endpoints": [
         {
-          "endpoint": "trending",
+          "endpoint": "playlists",
           "status": null,
           "error": "fetch failed"
         },
@@ -111,7 +111,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 526
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "trending",
@@ -1542,12 +1543,12 @@
       "working_count": 0,
       "failed_count": 12,
       "availability": 0,
+      "cloudflare_blocked": true,
       "working_endpoints": [],
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "comments",
@@ -5152,27 +5153,33 @@
         },
         {
           "endpoint": "playlists",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "config",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "sponsors",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
