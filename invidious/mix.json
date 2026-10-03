@@ -1,13 +1,12 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-10-03T08:34:20.819Z",
+  "checked_at": "2026-10-03T08:49:27.746Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 2,
-  "failed_count": 102,
+  "working_count": 1,
+  "failed_count": 103,
   "working_instances": [
-    "https://invidious.ritoge.com",
     "https://yt.thechangebook.org"
   ],
   "failed_instances": [
@@ -17,7 +16,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -108,8 +108,7 @@
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv.vern.cc",
@@ -418,6 +417,10 @@
       "status": 403
     },
     {
+      "instance": "https://invidious.ritoge.com",
+      "status": 500
+    },
+    {
       "instance": "https://yt.omada.cafe",
       "status": 503
     },
@@ -478,6 +481,7 @@
     "https://inv6.nadeko.net",
     "https://inv7.nadeko.net",
     "https://inv8.nadeko.net",
+    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
