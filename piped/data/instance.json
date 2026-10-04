@@ -1,10 +1,36 @@
 {
-  "checked_at": "2026-10-04T14:48:05.263Z",
+  "checked_at": "2026-10-04T15:33:05.560Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
       "instance": "https://pipedapi.ducks.party",
+      "total_endpoints": 12,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors",
+        "c",
+        "user"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
+    {
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -51,40 +77,6 @@
         {
           "endpoint": "streams",
           "status": 500
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
-      "instance": "https://api.piped.private.coffee",
-      "total_endpoints": 12,
-      "working_count": 9,
-      "failed_count": 3,
-      "availability": 75,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "sponsors"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "c",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "endpoint": "user",
-          "status": null,
-          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
