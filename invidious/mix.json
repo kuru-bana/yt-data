@@ -1,13 +1,12 @@
 {
   "endpoint": "mixes/:rdid",
   "sample_path": "/api/v1/mixes/RDdQw4w9WgXcQ",
-  "checked_at": "2026-10-04T00:34:34.631Z",
+  "checked_at": "2026-10-04T00:49:35.636Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 3,
-  "failed_count": 101,
+  "working_count": 2,
+  "failed_count": 102,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
     "https://yt.thechangebook.org"
   ],
@@ -62,6 +61,10 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": 500
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -251,7 +254,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -438,7 +441,8 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://lekker.gay",
