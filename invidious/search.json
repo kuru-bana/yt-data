@@ -1,16 +1,17 @@
 {
   "endpoint": "search",
   "sample_path": "/api/v1/search?q=test",
-  "checked_at": "2026-10-04T18:01:30.930Z",
+  "checked_at": "2026-10-04T18:16:30.826Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 5,
-  "failed_count": 99,
+  "working_count": 6,
+  "failed_count": 98,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
+    "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
@@ -20,7 +21,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -372,7 +374,8 @@
     },
     {
       "instance": "https://invidious.reallyaweso.me",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.dhusch.de",
@@ -422,8 +425,7 @@
     },
     {
       "instance": "https://invidious.protokolla.fi",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://yt.artemislena.eu",
@@ -445,12 +447,9 @@
       "status": 404
     },
     {
-      "instance": "https://yt.thechangebook.org",
-      "status": 400
-    },
-    {
       "instance": "https://app.materialio.us",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
