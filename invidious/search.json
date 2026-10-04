@@ -1,16 +1,15 @@
 {
   "endpoint": "search",
   "sample_path": "/api/v1/search?q=test",
-  "checked_at": "2026-10-04T01:01:28.817Z",
+  "checked_at": "2026-10-04T01:31:30.038Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 6,
-  "failed_count": 98,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
     "https://invidious.f5.si",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
-    "https://invidious.flokinet.to",
     "https://yt.thechangebook.org",
     "https://inv.kamuridesu.com"
   ],
@@ -21,7 +20,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -103,8 +103,7 @@
     },
     {
       "instance": "https://inv5.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv6.nadeko.net",
@@ -113,18 +112,15 @@
     },
     {
       "instance": "https://inv7.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv8.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv9.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv.vern.cc",
@@ -247,7 +243,8 @@
     },
     {
       "instance": "https://invidious.slipfox.xyz",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.privacydev.net",
@@ -269,7 +266,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 200
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -447,6 +444,10 @@
       "error": "fetch failed"
     },
     {
+      "instance": "https://invidious.flokinet.to",
+      "status": 502
+    },
+    {
       "instance": "https://lekker.gay",
       "status": null,
       "error": "fetch failed"
@@ -467,6 +468,10 @@
   ],
   "cloudflare_instances": [
     "https://iv.duti.dev",
+    "https://inv5.nadeko.net",
+    "https://inv7.nadeko.net",
+    "https://inv8.nadeko.net",
+    "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
     "https://invidious.tiekoetter.com",
