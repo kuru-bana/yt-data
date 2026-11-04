@@ -1,8 +1,34 @@
 {
-  "checked_at": "2026-11-04T09:48:05.190Z",
+  "checked_at": "2026-11-04T10:33:05.387Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
+    {
+      "instance": "https://pipedapi.ducks.party",
+      "total_endpoints": 12,
+      "working_count": 11,
+      "failed_count": 1,
+      "availability": 92,
+      "working_endpoints": [
+        "streams",
+        "comments",
+        "search",
+        "suggestions",
+        "trending",
+        "channel",
+        "playlists",
+        "config",
+        "sponsors",
+        "c",
+        "user"
+      ],
+      "failed_endpoints": [
+        {
+          "endpoint": "dearrow",
+          "status": 400
+        }
+      ]
+    },
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
@@ -30,48 +56,17 @@
       ]
     },
     {
-      "instance": "https://pipedapi.ducks.party",
-      "total_endpoints": 12,
-      "working_count": 10,
-      "failed_count": 2,
-      "availability": 83,
-      "working_endpoints": [
-        "streams",
-        "comments",
-        "search",
-        "suggestions",
-        "trending",
-        "channel",
-        "playlists",
-        "config",
-        "c",
-        "user"
-      ],
-      "failed_endpoints": [
-        {
-          "endpoint": "sponsors",
-          "status": null,
-          "error": "fetch failed"
-        },
-        {
-          "endpoint": "dearrow",
-          "status": 400
-        }
-      ]
-    },
-    {
       "instance": "https://pipedapi.winscloud.net",
       "total_endpoints": 12,
-      "working_count": 10,
-      "failed_count": 2,
-      "availability": 83,
+      "working_count": 9,
+      "failed_count": 3,
+      "availability": 75,
       "working_endpoints": [
         "comments",
         "search",
         "suggestions",
         "trending",
         "channel",
-        "playlists",
         "config",
         "sponsors",
         "c",
@@ -81,6 +76,11 @@
         {
           "endpoint": "streams",
           "status": 500
+        },
+        {
+          "endpoint": "playlists",
+          "status": null,
+          "error": "timeout"
         },
         {
           "endpoint": "dearrow",
