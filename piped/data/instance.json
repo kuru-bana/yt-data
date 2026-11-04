@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-04T21:48:04.990Z",
+  "checked_at": "2026-11-04T23:03:05.298Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
     {
-      "instance": "https://pipedapi.ducks.party",
+      "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
       "working_count": 11,
       "failed_count": 1,
@@ -30,16 +30,15 @@
       ]
     },
     {
-      "instance": "https://api.piped.private.coffee",
+      "instance": "https://pipedapi.ducks.party",
       "total_endpoints": 12,
-      "working_count": 11,
-      "failed_count": 1,
-      "availability": 92,
+      "working_count": 10,
+      "failed_count": 2,
+      "availability": 83,
       "working_endpoints": [
         "streams",
         "comments",
         "search",
-        "suggestions",
         "trending",
         "channel",
         "playlists",
@@ -49,6 +48,10 @@
         "user"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "suggestions",
+          "status": 500
+        },
         {
           "endpoint": "dearrow",
           "status": 400
@@ -1538,12 +1541,12 @@
       "working_count": 0,
       "failed_count": 12,
       "availability": 0,
+      "cloudflare_blocked": true,
       "working_endpoints": [],
       "failed_endpoints": [
         {
           "endpoint": "streams",
-          "status": null,
-          "error": "fetch failed"
+          "status": 403
         },
         {
           "endpoint": "comments",
@@ -1551,43 +1554,53 @@
         },
         {
           "endpoint": "search",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "suggestions",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "channel",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "playlists",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "config",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "sponsors",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "c",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "user",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
-          "status": 404
+          "status": null,
+          "error": "fetch failed"
         }
       ]
     },
@@ -6244,7 +6257,8 @@
         },
         {
           "endpoint": "suggestions",
-          "status": 200
+          "status": null,
+          "error": "fetch failed"
         },
         {
           "endpoint": "trending",
