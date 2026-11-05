@@ -1,11 +1,11 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-11-05T14:22:09.262Z",
+  "checked_at": "2026-11-05T14:37:09.166Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 21,
-  "failed_count": 83,
+  "working_count": 20,
+  "failed_count": 84,
   "working_instances": [
     "https://yewtu.be",
     "https://iv.catgirl.cloud",
@@ -26,13 +26,13 @@
     "https://invidious.nerdvpn.de",
     "https://invidious.ritoge.com",
     "https://yt.omada.cafe",
-    "https://y.com.sb",
     "https://inv.kamuridesu.com"
   ],
   "failed_instances": [
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -371,6 +371,11 @@
       "status": 403
     },
     {
+      "instance": "https://y.com.sb",
+      "status": null,
+      "error": "fetch failed"
+    },
+    {
       "instance": "https://yt.vern.cc",
       "status": null,
       "error": "fetch failed"
@@ -386,8 +391,7 @@
     },
     {
       "instance": "https://invidious.flokinet.to",
-      "status": null,
-      "error": "fetch failed"
+      "status": 502
     },
     {
       "instance": "https://lekker.gay",
