@@ -1,17 +1,16 @@
 {
   "endpoint": "channels/:id/streams",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/streams",
-  "checked_at": "2026-11-07T01:03:02.761Z",
+  "checked_at": "2026-11-07T01:18:02.864Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 5,
-  "failed_count": 99,
+  "working_count": 4,
+  "failed_count": 100,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ethibox.fr",
     "https://invidious.ducks.party",
-    "https://invidious.ritoge.com",
-    "https://inv.kamuridesu.com"
+    "https://invidious.ritoge.com"
   ],
   "failed_instances": [
     {
@@ -20,7 +19,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -162,8 +162,7 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
@@ -256,7 +255,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 429
+      "status": 200
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -454,6 +453,11 @@
     {
       "instance": "https://app.materialio.us",
       "status": 404
+    },
+    {
+      "instance": "https://inv.kamuridesu.com",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
