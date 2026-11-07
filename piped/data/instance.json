@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-07T18:33:04.894Z",
+  "checked_at": "2026-11-07T19:33:04.790Z",
   "total_instances": 131,
   "total_endpoints": 12,
   "instances": [
@@ -61,19 +61,21 @@
     {
       "instance": "https://api.piped.private.coffee",
       "total_endpoints": 12,
-      "working_count": 7,
-      "failed_count": 5,
-      "availability": 58,
+      "working_count": 4,
+      "failed_count": 8,
+      "availability": 33,
       "working_endpoints": [
-        "streams",
         "comments",
         "suggestions",
         "trending",
-        "config",
-        "c",
-        "user"
+        "sponsors"
       ],
       "failed_endpoints": [
+        {
+          "endpoint": "streams",
+          "status": null,
+          "error": "fetch failed"
+        },
         {
           "endpoint": "search",
           "status": null,
@@ -90,14 +92,23 @@
           "error": "fetch failed"
         },
         {
-          "endpoint": "sponsors",
+          "endpoint": "config",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
+          "endpoint": "c",
+          "status": null,
+          "error": "fetch failed"
+        },
+        {
+          "endpoint": "user",
           "status": null,
           "error": "fetch failed"
         },
         {
           "endpoint": "dearrow",
-          "status": null,
-          "error": "fetch failed"
+          "status": 400
         }
       ]
     },
