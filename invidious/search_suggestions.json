@@ -1,13 +1,12 @@
 {
   "endpoint": "search/suggestions",
   "sample_path": "/api/v1/search/suggestions?q=test",
-  "checked_at": "2026-11-07T10:01:44.562Z",
+  "checked_at": "2026-11-07T10:46:44.957Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 6,
-  "failed_count": 98,
+  "working_count": 5,
+  "failed_count": 99,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://invidious.ethibox.fr",
     "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
@@ -21,7 +20,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -64,6 +64,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -191,13 +196,11 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://invidious.tiekoetter.com",
@@ -205,8 +208,7 @@
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": null,
-      "error": "fetch failed"
+      "status": 502
     },
     {
       "instance": "https://invidious.perennialte.ch",
