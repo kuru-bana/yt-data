@@ -1,16 +1,15 @@
 {
   "endpoint": "channels/:id/shorts",
   "sample_path": "/api/v1/channels/UCVhQ2NnY5Rskt6UjCUkJ_DA/shorts",
-  "checked_at": "2026-11-14T04:47:46.261Z",
+  "checked_at": "2026-11-14T05:02:46.267Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://invidious.ritoge.com",
-    "https://inv.kamuridesu.com"
+    "https://invidious.ritoge.com"
   ],
   "failed_instances": [
     {
@@ -19,7 +18,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -57,7 +57,8 @@
     },
     {
       "instance": "https://iv.nboeck.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.ok0.org",
@@ -98,13 +99,11 @@
     },
     {
       "instance": "https://inv7.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv8.nadeko.net",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://inv9.nadeko.net",
@@ -163,8 +162,7 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
@@ -192,11 +190,13 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.tiekoetter.com",
@@ -205,7 +205,8 @@
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -464,6 +465,11 @@
       "status": 404
     },
     {
+      "instance": "https://inv.kamuridesu.com",
+      "status": null,
+      "error": "timeout"
+    },
+    {
       "instance": "https://invidious.projektegfau.lt",
       "status": null,
       "error": "fetch failed"
@@ -479,6 +485,8 @@
     "https://inv4.nadeko.net",
     "https://inv5.nadeko.net",
     "https://inv6.nadeko.net",
+    "https://inv7.nadeko.net",
+    "https://inv8.nadeko.net",
     "https://inv9.nadeko.net",
     "https://inv.riverside.rocks",
     "https://inv.zzls.xyz",
