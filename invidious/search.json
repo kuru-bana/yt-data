@@ -1,16 +1,15 @@
 {
   "endpoint": "search",
   "sample_path": "/api/v1/search?q=test",
-  "checked_at": "2026-11-17T21:31:27.259Z",
+  "checked_at": "2026-11-17T21:46:29.163Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
     "https://iv.catgirl.cloud",
     "https://invidious.ducks.party",
-    "https://invidious.ritoge.com",
-    "https://inv.kamuridesu.com"
+    "https://invidious.ritoge.com"
   ],
   "failed_instances": [
     {
@@ -19,7 +18,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -189,11 +189,13 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.tiekoetter.com",
@@ -460,6 +462,11 @@
     {
       "instance": "https://app.materialio.us",
       "status": 404
+    },
+    {
+      "instance": "https://inv.kamuridesu.com",
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://invidious.projektegfau.lt",
