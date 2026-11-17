@@ -1,13 +1,12 @@
 {
   "endpoint": "videos/:id",
   "sample_path": "/api/v1/videos/dQw4w9WgXcQ",
-  "checked_at": "2026-11-17T02:00:12.264Z",
+  "checked_at": "2026-11-17T02:15:12.162Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 2,
-  "failed_count": 102,
+  "working_count": 1,
+  "failed_count": 103,
   "working_instances": [
-    "https://iv.catgirl.cloud",
     "https://invidious.ritoge.com"
   ],
   "failed_instances": [
@@ -61,6 +60,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -253,7 +257,7 @@
     },
     {
       "instance": "https://invidious.xyz",
-      "status": 401
+      "status": 429
     },
     {
       "instance": "https://invidious.weblibre.org",
@@ -400,8 +404,7 @@
     },
     {
       "instance": "https://invidious.nerdvpn.de",
-      "status": null,
-      "error": "timeout"
+      "status": 429
     },
     {
       "instance": "https://invidious.technicalvoid.dev",
