@@ -1,14 +1,13 @@
 {
   "endpoint": "trending/movies",
   "sample_path": "/api/v1/trending?type=movies",
-  "checked_at": "2026-11-19T06:51:06.765Z",
+  "checked_at": "2026-11-19T07:06:05.868Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 4,
-  "failed_count": 100,
+  "working_count": 3,
+  "failed_count": 101,
   "working_instances": [
     "https://iv.catgirl.cloud",
-    "https://invidious.ducks.party",
     "https://invidious.ritoge.com",
     "https://inv.kamuridesu.com"
   ],
@@ -19,7 +18,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -189,11 +189,13 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": 404
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.tiekoetter.com",
@@ -201,7 +203,8 @@
     },
     {
       "instance": "https://invidious.private.coffee",
-      "status": 502
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://invidious.perennialte.ch",
@@ -397,9 +400,13 @@
       "error": "fetch failed"
     },
     {
-      "instance": "https://invidious.nerdvpn.de",
+      "instance": "https://invidious.ducks.party",
       "status": null,
-      "error": "timeout"
+      "error": "fetch failed"
+    },
+    {
+      "instance": "https://invidious.nerdvpn.de",
+      "status": 403
     },
     {
       "instance": "https://invidious.technicalvoid.dev",
@@ -488,6 +495,7 @@
     "https://invidious.domain.glass",
     "https://invidious.epicsite.xyz",
     "https://invidious.f5.si",
+    "https://invidious.nerdvpn.de",
     "https://invidious.schenkel.eti.br"
   ]
 }
