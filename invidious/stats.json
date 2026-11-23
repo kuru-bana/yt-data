@@ -1,13 +1,12 @@
 {
   "endpoint": "stats",
   "sample_path": "/api/v1/stats",
-  "checked_at": "2026-11-23T21:22:08.167Z",
+  "checked_at": "2026-11-23T21:37:08.760Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 18,
-  "failed_count": 86,
+  "working_count": 17,
+  "failed_count": 87,
   "working_instances": [
-    "https://yewtu.be",
     "https://iv.catgirl.cloud",
     "https://inv.nadeko.net",
     "https://inv1.nadeko.net",
@@ -28,9 +27,12 @@
   ],
   "failed_instances": [
     {
+      "instance": "https://yewtu.be",
+      "status": 502
+    },
+    {
       "instance": "https://vid.puffyan.us",
-      "status": null,
-      "error": "timeout"
+      "status": 502
     },
     {
       "instance": "https://iv.melmac.space",
@@ -160,8 +162,7 @@
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://invidious.private.coffee",
