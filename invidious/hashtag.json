@@ -1,7 +1,7 @@
 {
   "endpoint": "hashtag/:tag",
   "sample_path": "/api/v1/hashtag/music",
-  "checked_at": "2026-11-26T19:06:18.754Z",
+  "checked_at": "2026-11-26T19:21:18.153Z",
   "cache_ttl_seconds": 600,
   "total": 104,
   "working_count": 15,
@@ -30,7 +30,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -128,11 +129,13 @@
     },
     {
       "instance": "https://inv.bp.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.eu.projectsegfau.lt",
-      "status": 200
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://inv.sg.projectsegfau.lt",
@@ -156,18 +159,15 @@
     },
     {
       "instance": "https://invidious.projectsegfau.lt",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://invidious.adminforge.de",
-      "status": null,
-      "error": "fetch failed"
+      "status": 404
     },
     {
       "instance": "https://invidious.tiekoetter.com",
-      "status": null,
-      "error": "fetch failed"
+      "status": 403
     },
     {
       "instance": "https://invidious.private.coffee",
@@ -440,6 +440,7 @@
   "cloudflare_instances": [
     "https://iv.duti.dev",
     "https://inv.riverside.rocks",
+    "https://invidious.tiekoetter.com",
     "https://invidious.perennialte.ch",
     "https://invidious.kavin.rocks",
     "https://invidious.io.lol",
