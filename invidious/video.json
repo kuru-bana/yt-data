@@ -1,14 +1,12 @@
 {
   "endpoint": "videos/:id",
   "sample_path": "/api/v1/videos/dQw4w9WgXcQ",
-  "checked_at": "2026-11-26T12:30:12.459Z",
+  "checked_at": "2026-11-26T12:45:12.006Z",
   "cache_ttl_seconds": 600,
   "total": 104,
-  "working_count": 1,
-  "failed_count": 103,
-  "working_instances": [
-    "https://iv.catgirl.cloud"
-  ],
+  "working_count": 0,
+  "failed_count": 104,
+  "working_instances": [],
   "failed_instances": [
     {
       "instance": "https://yewtu.be",
@@ -16,7 +14,8 @@
     },
     {
       "instance": "https://vid.puffyan.us",
-      "status": 502
+      "status": null,
+      "error": "timeout"
     },
     {
       "instance": "https://iv.melmac.space",
@@ -59,6 +58,11 @@
     {
       "instance": "https://iv.ok0.org",
       "status": 404
+    },
+    {
+      "instance": "https://iv.catgirl.cloud",
+      "status": null,
+      "error": "fetch failed"
     },
     {
       "instance": "https://iv.nowhere.moe",
@@ -399,8 +403,7 @@
     },
     {
       "instance": "https://invidious.nerdvpn.de",
-      "status": null,
-      "error": "timeout"
+      "status": 403
     },
     {
       "instance": "https://invidious.technicalvoid.dev",
@@ -436,8 +439,7 @@
     },
     {
       "instance": "https://invidious.protokolla.fi",
-      "status": null,
-      "error": "fetch failed"
+      "status": 200
     },
     {
       "instance": "https://yt.artemislena.eu",
@@ -499,6 +501,7 @@
     "https://invidious.domain.glass",
     "https://invidious.epicsite.xyz",
     "https://invidious.f5.si",
+    "https://invidious.nerdvpn.de",
     "https://invidious.schenkel.eti.br",
     "https://inv.kamuridesu.com"
   ]
